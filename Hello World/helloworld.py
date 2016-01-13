@@ -23,11 +23,19 @@ print "Hello World"
 
 """
     Ve uygulamamız tamamdır.
-    Sadece tek satırlık bir kod ile C de bu 8 satır yer kaplamıştı
+    Sadece tek satırlık bir kod, C de bu 8 satır yer kaplamıştı
     Üstelik platform bağımsız çalışacak bir uygulama oldu
     Output için extra bir dosya oluşturmadan .py dosyamızı istediğimiz işletim
     sisteminde kullanabiliriz artık
     İşletim sisteminde Python kurulu olması lazım
     Linux tabanlı çoğu işletim sisteminde python default olarak kurulu gelmektedir
     Yalnız windows ta kendiniz kurmanız lazım boyutu çok büyük değil max 50MB dır
+"""
+
+"""
+Output:
+
+Hello World
+
+Process finished with exit code 0
 """
