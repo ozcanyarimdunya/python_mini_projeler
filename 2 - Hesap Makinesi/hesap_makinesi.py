@@ -7,23 +7,22 @@
 
 # Toplama
 
-print "toplam = ", 3 + 4     # sonuç 3 + 4 = 7 olarak ekranda görünecektir
-
+print "toplam = ", 3 + 4        # 3 + 4 = 7
 
 
 # Çıkarma
 
-print "Fark = ", 12 - 5    # 12 - 5 = 7
+print "Fark = ", 12 - 5         # 12 - 5 = 7
 
 
 # Çarpma
 
-print "Çarpım = ", 3 * 9     # 3 * 9 = 27
+print "Çarpım = ", 3 * 9        # 3 * 9 = 27
 
 
 # Bölme
 
-print "Bölüm = ", 34 / 17   # 34 / 17 = 2
+print "Bölüm = ", 34 / 17       # 34 / 17 = 2
 
 """
     Pythonun güçlü yanlarından biri de sayısal işlemleri çok hızlı yapması
