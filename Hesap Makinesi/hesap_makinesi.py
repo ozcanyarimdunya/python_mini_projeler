@@ -1,7 +1,8 @@
 # coding=utf-8
 
 """
-    Girdiğimiz sayıların toplamını bize gösterecek bir uygulama
+    Girdiğimiz sayıların yapacağımız işleme göre
+    bize sonucunu gösterecek bir uygulama
 """
 
 # Toplama
