@@ -29,7 +29,7 @@ print "Bölüm = ", 34 / 17   # 34 / 17 = 2
     Yanlız onu yapacağımız 2 satırlık toplama işleminde pek ne farkedemeyiz
     Çünkü bütün programlama dilleri böyle bir kodu hızlı çalıştırır
     Ama iş veri madenciliğine girince python üstünlüğünü ortaya koyuyor
-    Veri madenciliği = büyük veriler içerisinde arama algoritması gibi bişey
+    Veri madenciliği = büyük veriler herhalde
     Bende tam bilmiyorum :D
 """
 
