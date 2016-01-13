@@ -4,10 +4,10 @@
     Koşullar deyince aklımıza direkt isminden de anlaşılacağı gibi
     şartlı yapılar gelsin
     Kısaca eğer bu şart sağlanıyorsa, şunu yap
-    Örneğin eğer x, 5'e eşitse y'yi bir arttır gibi
+    Örneğin eğer x, 5'e eşitse, x, 5'e eşittir yazdır ekrana
     Tabi programlama dillerini ingilizce olarak yazdığımız için (ne yazık ki!)
     Mecbur ingilizce kalıplar kullanacağız
-    Örneğin if x equal to 5, increment y by one gibi
+    Örneğin if x equal to 5, print x equal to 5
     Örnekte daha anlaşılır olacaktır.
 """
 
