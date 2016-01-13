@@ -35,7 +35,7 @@ print "Hello World"
 """
 Output:
 
-Hello World
+1-Hello World
 
 Process finished with exit code 0
 """
