@@ -25,7 +25,7 @@ def basla(rng_1, rng_2):
 
 
 if __name__ == '__main__':
-    print "Hangi seviyeden başlamak istiyorsunu ?"
+    print "Hangi seviyeden başlamak istiyorsunuz ?"
     print "  1 - Kolay "
     print "  2 - Orta "
     print "  3 - Zor"
