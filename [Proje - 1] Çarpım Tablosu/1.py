@@ -1,7 +1,7 @@
 # coding=utf-8
 
 import os
-import random
+from random import randint
 
 """
     Küçük çapta bir çarpım tablosu uygulaması
@@ -28,8 +28,8 @@ def basla(rng_1, rng_2):
         x = 5
     for i in range(0, x):
         for j in range(0, x):
-            sayi_1 = random.randint(rng_1, rng_2)
-            sayi_2 = random.randint(rng_1, rng_2)
+            sayi_1 = randint(rng_1, rng_2)
+            sayi_2 = randint(rng_1, rng_2)
             print "_"*50, "\n"
             print "\t%d x %d kaça eşittir? (çıkış = -1)"%(sayi_1, sayi_2)
             sonuc = input("sonuc >> ")
