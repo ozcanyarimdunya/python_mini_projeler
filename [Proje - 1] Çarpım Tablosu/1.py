@@ -7,16 +7,16 @@ import random
     Küçük çapta bir çarpım tablosu uygulaması
 """
 
-print "-"*50, "\n"
-print "HOŞGELDİNİZ.."
+print "-"*50
+print "\t\tHOŞGELDİNİZ.."
 print "-"*50, "\n"
 
 def carpim(i, j, r):
     if r != -1:
         if i*j == r:
-            print "***** Doğru *****"
+            print "\t\t***** Doğru *****"
         else:
-            print "!!! Yanlış cevap %s olacaktı"%(i*j)
+            print "\t!!! Yanlış cevap %s olacaktı"%(i*j)
     else:
         os.system("clear")
         secim()
@@ -37,17 +37,18 @@ def basla(rng_1, rng_2):
 
             if i == 4 and j == 4:
                 os.system("clear")
-                print "\n*-- Bu bölüm bitti bir üst bölüme geçebilsiniz --*\n"
+                print "\n *-- Bu bölüm bitti bir üst bölüme geçebilsiniz --*\n"
                 secim()
 
 def secim():
-    print "Hangi seviyeden başlamak istiyorsunuz (çıkış = -1) ?"
+    print " Hangi seviyeden başlamak istiyorsunuz (çıkış = -1) ?\n"
     print "  1 - Kolay "
     print "  2 - Orta "
     print "  3 - Zor"
-    print "  4 - Çok zor"
+    print "  4 - Çok zor\n"
 
     svy = input(" >> ")
+    os.system("clear")
 
     if svy == 1:
         basla(1, 6)
