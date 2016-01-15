@@ -8,6 +8,8 @@ import random
 """
 
 print "-"*50, "\n"
+print "HOŞGELDİNİZ.."
+print "-"*50, "\n"
 
 def carpim(i, j, r):
     if r != -1:
@@ -34,6 +36,7 @@ def basla(rng_1, rng_2):
             carpim(sayi_1, sayi_2, sonuc)
 
             if i == 4 and j == 4:
+                os.system("clear")
                 print "\n*-- Bu bölüm bitti bir üst bölüme geçebilsiniz --*\n"
                 secim()
 
