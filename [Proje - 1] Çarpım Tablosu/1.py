@@ -2,7 +2,6 @@
 
 import os
 import random
-from random import choice
 
 """
     Küçük çapta bir çarpım tablosu uygulaması
