@@ -37,7 +37,8 @@ for sayi in sayilar:
     if sayi < en_kucuk:
         en_kucuk = sayi
     toplam += sayi
-    ortalama = toplam/len(sayilar)
+
+ortalama = toplam/len(sayilar)
 
 print "\nen büyük sayı = {}\n" \
         "en küçük sayı = {}\n" \
