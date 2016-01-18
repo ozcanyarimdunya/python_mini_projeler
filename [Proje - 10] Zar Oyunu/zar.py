@@ -24,3 +24,6 @@ while True:
     time.sleep(0.5)
 
 print """\n*** {}. denemede (6,6) geldi ***""".format(i)
+
+
+# @ozcaan11
