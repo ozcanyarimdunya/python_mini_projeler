@@ -48,5 +48,5 @@ print "-" * 75
 print "                         ESKİŞEHİR HAVA DURUMU"
 print "-" * 75
 for i in range(0, len(gun)):
-    print "{} {},\n\t\t\t\t\tgündüz: {}\tgece: {}\t{}".format(tarih[i],gun[i],gunduz[i],gece[i],aciklama[i])
+    print "{} {},\n\t\t\t\t\tgündüz: {} °C\tgece: {} °C\t{}".format(tarih[i],gun[i],gunduz[i],gece[i],aciklama[i])
     print "-" * 75
