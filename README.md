@@ -8,7 +8,7 @@ Bütün uygulama dosyalarına gerekli açıklamaları ayrıntılı bir şekilde 
 
 #####Projeler
     
-[Çarpım Tablosu](../..tree/master/)
+[Çarpım Tablosu](../..tree/)
 
 #####Kaynaklar
 
