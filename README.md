@@ -1,10 +1,14 @@
 # Python 2.7 Mini Projeler
 
-#####Boş zamanlarımda hobi olarak eğitim serisi tarzında python da yazdığım mini mini projeler bunlar :)
+Boş zamanlarımda hobi olarak eğitim serisi tarzında python da yazdığım mini mini projeler bunlar :)
 
-#####Bütün uygulama dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yazdım
+Bütün uygulama dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yazdım
 
-#####Çok az programlama bilgisi olan biri için başlangıç seviyesinde yararlı olabileceğini düşündüğüm uygulamaları yazdım
+Çok az programlama bilgisi olan biri için başlangıç seviyesinde yararlı olabileceğini düşündüğüm uygulamaları yazdım
+
+#####Projeler
+
+  1 - Çarpım Tablosu
 
 #####Kaynaklar
 
