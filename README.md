@@ -8,7 +8,7 @@ Bütün uygulama dosyalarına gerekli açıklamaları ayrıntılı bir şekilde 
 
 #####Projeler
 
-  1 - Çarpım Tablosu
+    1 - Çarpım Tablosu
 
 #####Kaynaklar
 
