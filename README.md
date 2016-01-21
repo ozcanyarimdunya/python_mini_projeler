@@ -31,10 +31,14 @@ Bütün uygulama dosyalarına gerekli açıklamaları ayrıntılı bir şekilde 
 > 11 - [Eskişehir hava durumu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2011%5D%20Eski%C5%9Fehir%20Hava%20Durumu/hava.py)
 
 
-#####Kaynaklar
+---------------------------------------------------------------------------------------------------------------------------
+
+
+###Kaynaklar
 
 - http://belgeler.istihza.com/py2/
 
-#####Araçlar
+###Araçlar
 
-PyCharm Community Edition 5.0.3 : https://www.jetbrains.com/pycharm-edu/download/#section=linux-version
+PyCharm Community Edition 5.0.3
+- Download page: https://www.jetbrains.com/pycharm-edu/download/#section=linux-version
