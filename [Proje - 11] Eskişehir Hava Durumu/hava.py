@@ -1,9 +1,12 @@
 # coding=utf-8
 """
     Eskişehir hava durumu
+    İlk defa regular expresiionlarlar çalıştığım için
+    biraz abartılı dolambaçlı olmuş olabilir :)
 """
 
-import re, urllib
+import re
+import urllib
 
 url = "http://www.havadurumu15gunluk.net/havadurumu/eskisehir-hava-durumu-15-gunluk.html"
 site = urllib.urlopen(url).read()
