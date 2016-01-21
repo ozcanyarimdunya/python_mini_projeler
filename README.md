@@ -40,7 +40,5 @@ Bütün uygulama dosyalarına gerekli açıklamaları ayrıntılı bir şekilde 
 
 - http://belgeler.istihza.com/py2/
 
-###Araçlar
-
-PyCharm Community Edition 5.0.3
+###PyCharm Community Edition 5.0.3
 - Download page: https://www.jetbrains.com/pycharm-edu/download/#section=linux-version
