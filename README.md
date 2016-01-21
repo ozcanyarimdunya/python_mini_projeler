@@ -8,7 +8,28 @@ Bütün uygulama dosyalarına gerekli açıklamaları ayrıntılı bir şekilde 
 
 #####Projeler
     
-[Çarpım Tablosu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2010%5D%20Zar%20Oyunu/zar.py)
+[Çarpım Tablosu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%201%5D%20%C3%87arp%C4%B1m%20Tablosu)
+
+[Ligtv & Cnn & Haberler.com' dan haber çekme](https://github.com/ozcaan11/python_mini_projeler/tree/master/%5BProje%20-%202%5D%20Ligtv'den%20Haber%20%C3%87ekme)
+
+[En büyük ve en küçük sayıyı bulma](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%203%5D%20En%20B%C3%BCy%C3%BCk%20ve%20En%20K%C3%BC%C3%A7%C3%BCk%20Say%C4%B1y%C4%B1%20Bulma/1.py)
+
+[Simple Encryption and Decryption](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%204%5D%20Simple%20Encryption%20and%20Decryption/simple_encr_decr.py)
+
+[Hanoi Kuleleri Oyunu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%205%5D%20Hanoi%20Kuleleri%20Oyunu/hanoi.py)
+
+[Faktoriyel alma](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%206%5D%20Faktoriyel%20Alma/fact.py)
+
+[Geometrik alan hesaplama](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%207%5D%20Geometrik%20%C5%9Eekillerin%20Alanlar%C4%B1n%C4%B1%20Hesaplama/1.py)
+
+[Zamanlayıcı](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%208%5D%20Zamanlayıcı/zamanlayici.py)
+
+[Dosya okuma işlemleri](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%209%5D%20Dosya%20Okuma/dosya_okuma.py)
+
+[Zar atma oyunu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2010%5D%20Zar%20Oyunu/zar.py)
+
+[Eskişehir hava durumu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2011%5D%20Eski%C5%9Fehir%20Hava%20Durumu/hava.py)
+
 
 #####Kaynaklar
 
