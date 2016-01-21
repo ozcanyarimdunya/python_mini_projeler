@@ -9,7 +9,7 @@ url = "http://www.havadurumu15gunluk.net/havadurumu/eskisehir-hava-durumu-15-gun
 site = urllib.urlopen(url).read()
 
 r_gunduz = '<td width="45">&nbsp;&nbsp;(-?\d+)°C</td>'
-r_gece ='<td width="45">&nbsp;(-?\d+)°C</td>'
+r_gece = '<td width="45">&nbsp;(-?\d+)°C</td>'
 r_gun = '<td width="70" nowrap="nowrap">(.*)</td>'
 r_tarih = '<td width="75" nowrap="nowrap">(.*)</td>'
 r_aciklama = '<img src="/havadurumu/images/trans.gif" alt="Eskişehir Hava durumu 15 günlük" width="1" height="1" />(.*)</div>'
@@ -26,7 +26,6 @@ gun = []
 tarih = []
 aciklama = []
 
-
 for i in re.findall(r_gunduz, site):
     gunduz.append(i)
 
@@ -42,11 +41,9 @@ for i in re.findall(r_tarih, site):
 for i in re.findall(r_aciklama, site):
     aciklama.append(i)
 
-print "-"*75
+print "-" * 75
 print "                         ESKİŞEHİR HAVA DURUMU"
-print "-"*75
+print "-" * 75
 for i in range(0, len(gun)):
-    print("""{} {},
-        \t\t\t\t{}\tgündüz: {},\tgece: {}
-            """).format(tarih[i],gun[i],aciklama[i],gunduz[i],gece[i])
-    print "-"*75
+    print "{} {},\n\t\t\t\t\tgündüz: {}\tgece: {}\t{}".format(tarih[i],gun[i],gunduz[i],gece[i],aciklama[i])
+    print "-" * 75
