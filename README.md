@@ -8,7 +8,7 @@ Bütün uygulama dosyalarına gerekli açıklamaları ayrıntılı bir şekilde 
 
 #####Projeler
     
-[Çarpım Tablosu](../..tree/)
+[Çarpım Tablosu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2010%5D%20Zar%20Oyunu/zar.py)
 
 #####Kaynaklar
 
