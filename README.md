@@ -7,8 +7,8 @@ Bütün uygulama dosyalarına gerekli açıklamaları ayrıntılı bir şekilde 
 Çok az programlama bilgisi olan biri için başlangıç seviyesinde yararlı olabileceğini düşündüğüm uygulamaları yazdım
 
 #####Projeler
-
-    1 - Çarpım Tablosu
+    
+    - Çarpım Tablosu
 
 #####Kaynaklar
 
