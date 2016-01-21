@@ -8,7 +8,7 @@ Bütün uygulama dosyalarına gerekli açıklamaları ayrıntılı bir şekilde 
 
 ###Projeler
     
- 1-[Çarpım Tablosu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%201%5D%20%C3%87arp%C4%B1m%20Tablosu/1.py)
+ -[Çarpım Tablosu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%201%5D%20%C3%87arp%C4%B1m%20Tablosu/1.py)
 
 [Ligtv & Cnn & Haberler.com' dan haber çekme](https://github.com/ozcaan11/python_mini_projeler/tree/master/%5BProje%20-%202%5D%20Ligtv'den%20Haber%20%C3%87ekme)
 
