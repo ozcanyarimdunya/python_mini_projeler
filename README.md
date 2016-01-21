@@ -6,6 +6,8 @@ Bütün uygulama dosyalarına gerekli açıklamaları ayrıntılı bir şekilde 
 
 Çok az programlama bilgisi olan biri için başlangıç seviyesinde yararlı olabileceğini düşündüğüm uygulamaları yazdım
 
+---------------------------------------------------------------------------------------------------------------------------
+
 ###Projeler
     
 > 1 - [Çarpım Tablosu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%201%5D%20%C3%87arp%C4%B1m%20Tablosu/1.py)
