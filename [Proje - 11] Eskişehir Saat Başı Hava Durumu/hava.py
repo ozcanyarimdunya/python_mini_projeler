@@ -1,54 +1,52 @@
 # coding=utf-8
 """
-    Eskişehir saatlik hava durumu
-    <th class="nem1" style="color:#4247b8; font-weight:bold; background-color:#ecf4f8; ">94</th>
+    Eskişehir hava durumu
 """
+
 import re, urllib
 
-url = "http://www.mgm.gov.tr/tahmin/default.aspx?s=ESKISEHIR"
-html = urllib.urlopen(url).read()
+url = "http://www.havadurumu15gunluk.net/havadurumu/eskisehir-hava-durumu-15-gunluk.html"
+site = urllib.urlopen(url).read()
 
-regex_sicak = '<th class="sicak1" style="font-weight:bold; ' \
-                 'color:red; background-color:#ecf4f8;">(.*)</th>'
+r_gunduz = '<td width="45">&nbsp;&nbsp;(-?\d+)°C</td>'
+r_gece ='<td width="45">&nbsp;(-?\d+)°C</td>'
+r_gun = '<td width="70" nowrap="nowrap">(.*)</td>'
+r_tarih = '<td width="75" nowrap="nowrap">(.*)</td>'
+r_aciklama = '<img src="/havadurumu/images/trans.gif" alt="Eskişehir Hava durumu 15 günlük" width="1" height="1" />(.*)</div>'
 
-regex_nem = '<th  class="nem1" style="color:#4247b8; ' \
-            'font-weight:bold; background-color:#ecf4f8; ">(\d+)</th>'
+comp_gunduz = re.compile(r_gunduz)
+comp_gece = re.compile(r_gece)
+comp_gun = re.compile(r_gun)
+comp_tarih = re.compile(r_tarih)
+comp_aciklama = re.compile(r_aciklama)
 
-regex_ruzgar = '<th class="ruzgarham1" style="color:#731d75; ' \
-               'font-weight:bold; background-color:#ecf4f8; ">(\d+)</th>'
-
-regex_saat = '<th style="color:#8095a4; background-color:#ecf4f8; ' \
-             'font-weight:normal;">([\d+][\d+]:00)</th>'
-
-comp_sicak = re.compile(regex_sicak)
-comp_nem = re.compile(regex_nem)
-comp_ruzgar = re.compile(regex_ruzgar)
-comp_saat = re.compile(regex_saat)
-
-sicaklik = []
-nem = []
-ruzgar = []
-saat = []
-
-for i in re.findall(comp_sicak, html):
-    sicaklik.append(i)
-
-for i in re.findall(comp_nem, html):
-    nem.append(i)
-
-for i in re.findall(comp_ruzgar, html):
-    ruzgar.append(i)
-
-for i in re.findall(comp_saat, html):
-    saat.append(i)
+gunduz = []
+gece = []
+gun = []
+tarih = []
+aciklama = []
 
 
-print """
-ESKİŞEHİR SAAT BAŞI HAVA DURUMU
--------------------------------
-"""
-for i in range(0, len(saat)):
-    print "saat: {},\tsıcaklık: {},\tnem: {},\truzgar: {}".format(saat[i], sicaklik[i], nem[i], ruzgar[i])
+for i in re.findall(r_gunduz, site):
+    gunduz.append(i)
 
+for i in re.findall(r_gece, site):
+    gece.append(i)
 
-# sıcaklık çekmede bir hata oldu sonra düzeltilecek
+for i in re.findall(r_gun, site):
+    gun.append(i)
+
+for i in re.findall(r_tarih, site):
+    tarih.append(i)
+
+for i in re.findall(r_aciklama, site):
+    aciklama.append(i)
+
+print "-"*75
+print "                         ESKİŞEHİR HAVA DURUMU"
+print "-"*75
+for i in range(0, len(gun)):
+    print("""{} {},
+        \t\t\t\t{}\tgündüz: {},\tgece: {}
+            """).format(tarih[i],gun[i],aciklama[i],gunduz[i],gece[i])
+    print "-"*75
