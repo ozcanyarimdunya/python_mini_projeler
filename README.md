@@ -2,9 +2,9 @@
 
 Boş zamanlarımda hobi olarak eğitim serisi tarzında python da yazdığım mini mini projeler bunlar :)
 
-Bütün uygulama dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yazdım
+Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yazdım.
 
-Çok az programlama bilgisi olan biri için başlangıç seviyesinde yararlı olabileceğini düşündüğüm uygulamaları yazdım
+Çok az programlama bilgisi olan biri için başlangıç seviyesinde yararlı olabileceğini düşündüğüm uygulamaları yazdım.
 
 ---------------------------------------------------------------------------------------------------------------------------
 
