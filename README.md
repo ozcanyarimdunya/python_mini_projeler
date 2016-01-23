@@ -6,7 +6,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 Çok az programlama bilgisi olan biri için başlangıç seviyesinde yararlı olabileceğini düşündüğüm uygulamaları yazdım.
 
-##### Kodları Ubuntuda, PyCharm Editorünü kullanarak yazdım. Kodları Windows hiç denemedim ne sonuçlar vereceğini bilmiyorum o yüzden
+##### Kodları Ubuntuda, PyCharm Editorünü kullanarak yazdım. Kodları Windowsta hiç denemedim ne sonuçlar vereceğini bilmiyorum o yüzden
 
 ---------------------------------------------------------------------------------------------------------------------------
 
