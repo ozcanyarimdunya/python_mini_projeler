@@ -36,7 +36,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 > 13 - [Öğrenci Kayıt Otomasyonu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2013%5D%20%C3%96%C4%9Frenci%20Kay%C4%B1t%20Otomasyonu/1.py)
 
-> 14 - [Asal Sayı Bulma](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2015%5D%20Asal%20Say%C4%B1%20Bulma/1.py)
+> 14 - [Asal Sayı Bulma](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2014%5D%20Asal%20Say%C4%B1%20Bulma/1.py)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
