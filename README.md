@@ -34,6 +34,8 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 > 12 - ['os' Modülü ile Dosya İşlemleri](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2012%5D%20'os'%20Mod%C3%BCl%C3%BC%20ile%20Dosya%20%C4%B0%C5%9Flemleri/1.py)
 
+> 13 - [Öğrenci Kayıt Otomasyonu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2013%5D%20%C3%96%C4%9Frenci%20Kay%C4%B1t%20Otomasyonu/1.py)
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 
