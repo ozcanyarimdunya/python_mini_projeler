@@ -12,7 +12,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 > 1 - [Çarpım Tablosu](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%201%5D%20%C3%87arp%C4%B1m%20Tablosu/1.py)
 
-> 2 - [Ligtv & Cnn & Haberler.com' dan haber çekme](https://github.com/ozcaan11/python_mini_projeler/tree/master/%5BProje%20-%202%5D%20Ligtv'den%20Haber%20%C3%87ekme)
+> 2 - [Ligtv, Cnn ve Haberler.com' dan spor haberlerini çekme](https://github.com/ozcaan11/python_mini_projeler/tree/master/%5BProje%20-%202%5D%20Ligtv'den%20Haber%20%C3%87ekme)
 
 > 3 - [En büyük ve en küçük sayıyı bulma](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%203%5D%20En%20B%C3%BCy%C3%BCk%20ve%20En%20K%C3%BC%C3%A7%C3%BCk%20Say%C4%B1y%C4%B1%20Bulma/1.py)
 
