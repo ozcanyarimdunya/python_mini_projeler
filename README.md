@@ -38,7 +38,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 > 14 - [Asal Sayı Bulma](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2014%5D%20Asal%20Say%C4%B1%20Bulma/1.py)
 
-> 14 - [Bilgisayar Bilgilerini Öğrenme](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2015%5D%20Bilgisayar%20Bilgilerini%20%C3%96%C4%9Frenme/1.py)
+> 15 - [Bilgisayar Bilgilerini Öğrenme](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2015%5D%20Bilgisayar%20Bilgilerini%20%C3%96%C4%9Frenme/1.py)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
