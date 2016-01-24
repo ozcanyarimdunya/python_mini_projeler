@@ -44,6 +44,8 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 > 16 - [Beautifulsoup ile Bir Siteden Haber Başlıklarını Çekme](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2016%5D%20Beautifulsoup%20ile%20Sitelerden%20Haber%20Ba%C5%9Fl%C4%B1klar%C4%B1n%C4%B1%20%C3%87ekme/1.py)
 
+> 17 - [Yazıyı Tersten Yazdırma](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2017%5D%20Yaz%C4%B1y%C4%B1%20Tersten%20Yazd%C4%B1rma/1.py)
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 
