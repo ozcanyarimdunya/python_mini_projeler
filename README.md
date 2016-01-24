@@ -42,6 +42,8 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 > 15 - [Bilgisayar Bilgilerini Öğrenme](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2015%5D%20Bilgisayar%20Bilgilerini%20%C3%96%C4%9Frenme/1.py)
 
+> 16 - [Beautifulsoup ile Bir Siteden Haber Başlıklarını Çekme](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2016%5D%20Beautifulsoup%20ile%20Sitelerden%20Haber%20Ba%C5%9Fl%C4%B1klar%C4%B1n%C4%B1%20%C3%87ekme/1.py)
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 
