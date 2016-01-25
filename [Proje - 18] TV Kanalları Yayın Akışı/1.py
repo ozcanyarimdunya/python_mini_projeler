@@ -36,7 +36,7 @@ def kanal(soup,kanal_adi):
         except:
             pass
     time.sleep(5)
-    s = input("\nDiğer kanalları da görmek istiyor musunuz ?(Evet: 1, Hayır: -1)")
+    s = input("\nDiğer kanalları da görmek istiyor musunuz?(Evet: 1, Hayır: -1)")
     if s == 1:
         main()
     else:
