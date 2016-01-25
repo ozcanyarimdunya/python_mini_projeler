@@ -2,6 +2,8 @@
 
 """
         Tv kanalları yayın akışı
+        Öncelikle BeautifulSoup modülünü kurmanız gerekecektir(3 sürümü)
+        'sudo pip install beautifulsoup' yazmanız işi halledecektir
         Tam donanımlı :)
 """
 
