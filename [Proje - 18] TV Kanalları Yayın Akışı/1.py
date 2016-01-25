@@ -14,7 +14,7 @@ Fox = "http://www.tvyayinakisi.com/fox"
 Show = "http://www.tvyayinakisi.com/show-tv"
 Star = "http://www.tvyayinakisi.com/star-tv"
 Atv = "http://www.tvyayinakisi.com/atv"
-TRT_1 = "http://www.tvyayinakisi.com/trt-1"
+Trt_1 = "http://www.tvyayinakisi.com/trt-1"
 Tv8 = "http://www.tvyayinakisi.com/tv-8"
 Kanal_7 = "http://www.tvyayinakisi.com/kanal-7"
 
@@ -75,7 +75,7 @@ def main():
         soup_atv = BeautifulSoup(urllib.urlopen(Atv).read())
         kanal(soup_atv,"Atv")
     elif secim == 6:
-        soup_trt1 = BeautifulSoup(urllib.urlopen(TRT_1).read())
+        soup_trt1 = BeautifulSoup(urllib.urlopen(Trt_1).read())
         kanal(soup_trt1,"Trt 1")
     elif secim == 7:
         soup_tv8 = BeautifulSoup(urllib.urlopen(Tv8).read())
