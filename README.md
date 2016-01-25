@@ -46,6 +46,8 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 > 17 - [Yazıyı Tersten Yazdırma](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2017%5D%20Yaz%C4%B1y%C4%B1%20Tersten%20Yazd%C4%B1rma/1.py)
 
+> 18 - [Tv Kanalları Yayın Akışı](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2018%5D%20TV%20Kanallar%C4%B1%20Yay%C4%B1n%20Ak%C4%B1%C5%9F%C4%B1/1.py)
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 
