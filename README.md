@@ -49,10 +49,8 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 > 18 - [Tv Kanalları Yayın Akışı](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2018%5D%20TV%20Kanallar%C4%B1%20Yay%C4%B1n%20Ak%C4%B1%C5%9F%C4%B1/1.py)
 
 > 19 - [SQLite3 İşlemleri](https://github.com/ozcaan11/python_mini_projeler/tree/master/%5BProje%20-%2019%5D%20Sqlite3%20SELECT%2C%20INSERT%2C%20DELETE%2C%20UPDATE%20i%C5%9Flemleri)
-     
-     - [connection](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2019%5D%20Sqlite3%20SELECT%2C%20INSERT%2C%20DELETE%2C%20UPDATE%20i%C5%9Flemleri/CONNECTION.py)
-     
-     - [insert](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2019%5D%20Sqlite3%20SELECT%2C%20INSERT%2C%20DELETE%2C%20UPDATE%20i%C5%9Flemleri/INSERT.py)
+> - [connection](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2019%5D%20Sqlite3%20SELECT%2C%20INSERT%2C%20DELETE%2C%20UPDATE%20i%C5%9Flemleri/CONNECTION.py)
+> - [insert](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2019%5D%20Sqlite3%20SELECT%2C%20INSERT%2C%20DELETE%2C%20UPDATE%20i%C5%9Flemleri/INSERT.py)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
