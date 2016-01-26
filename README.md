@@ -50,9 +50,9 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 > 19 - [SQLite3 İşlemleri](https://github.com/ozcaan11/python_mini_projeler/tree/master/%5BProje%20-%2019%5D%20Sqlite3%20SELECT%2C%20INSERT%2C%20DELETE%2C%20UPDATE%20i%C5%9Flemleri)
 
-        - [connection](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2019%5D%20Sqlite3%20SELECT%2C%20INSERT%2C%20DELETE%2C%20UPDATE%20i%C5%9Flemleri/CONNECTION.py)
+    > 1 - [connection](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2019%5D%20Sqlite3%20SELECT%2C%20INSERT%2C%20DELETE%2C%20UPDATE%20i%C5%9Flemleri/CONNECTION.py)
 
-        - [insert](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2019%5D%20Sqlite3%20SELECT%2C%20INSERT%2C%20DELETE%2C%20UPDATE%20i%C5%9Flemleri/INSERT.py)
+    > 2 - [insert](https://github.com/ozcaan11/python_mini_projeler/blob/master/%5BProje%20-%2019%5D%20Sqlite3%20SELECT%2C%20INSERT%2C%20DELETE%2C%20UPDATE%20i%C5%9Flemleri/INSERT.py)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
