@@ -6,7 +6,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 Çok az programlama bilgisi olan biri için başlangıç seviyesinde yararlı olabileceğini düşündüğüm uygulamaları yazdım.
 
-##### Kodları Ubuntuda, PyCharm Editorünü kullanarak yazdım. Kodları Windowsta hiç denemedim ne sonuçlar vereceğini bilmiyorum o yüzden
+#####NOT: Kodları Ubuntuda, PyCharm Editorünü kullanarak yazdım. Kodları Windowsta hiç denemedim ne sonuçlar vereceğini bilmiyorum o yüzden
 
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -76,5 +76,14 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 - http://belgeler.istihza.com/py2/
 
-###PyCharm Community Edition 5.0.3
-- Download page: https://www.jetbrains.com/pycharm-edu/download/#section=linux-version
+###Kullandığım Araçlar
+
+| 1 - [Ubuntu LTS 14.04](http://www.ubuntu.com/download)
+---------------
+
+| 2 - [PyCharm Community Edition 5.0.3](https://www.jetbrains.com/pycharm-edu/download/)
+---------------
+
+-----------------
+| [@ozcaan11](https://github.com/ozcaan11) 
+-----------------
