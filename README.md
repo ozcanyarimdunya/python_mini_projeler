@@ -11,6 +11,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 ---------------------------------------------------------------------------------------------------------------------------
 
 ###Projeler
+-
 
 | 1 - [Çarpım Tablosu]([Proje - 1] Çarpım Tablosu/1.py)
 -----------------
