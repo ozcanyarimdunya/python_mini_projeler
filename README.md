@@ -12,7 +12,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 ###Projeler
 
-| 1 - [Çarpım Tablosu][Proje - 1] Çarpım Tablosu/1.py)
+| 1 - [Çarpım Tablosu]([Proje - 1] Çarpım Tablosu/1.py)
 -----------------
 
 | 2 - [Ligtv, Cnn ve Haberler.com' dan spor haberlerini çekme]([Proje - 2] Ligtv'den Haber Çekme)
@@ -48,7 +48,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 | 12 - ['os' Modülü ile Dosya İşlemleri]([Proje - 12] 'os' Modülü ile Dosya İşlemleri/1.py)
 -----------------
 
-| 13 - [Öğrenci Kayıt Otomasyonu(MongoDB)][Proje - 13] Öğrenci Kayıt Otomasyonu ( MongoDB )/1.py)
+| 13 - [Öğrenci Kayıt Otomasyonu(MongoDB)]([Proje - 13] Öğrenci Kayıt Otomasyonu ( MongoDB )/1.py)
 -----------------
 
 | 14 - [Asal Sayı Bulma]([Proje - 14] Asal Sayı Bulma/1.py)
