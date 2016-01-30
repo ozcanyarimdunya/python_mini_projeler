@@ -70,7 +70,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 | 19 - [SQLite3 İşlemleri]([Proje - 19] Sqlite3 İşlemleri) ( [connection]([Proje - 19] Sqlite3 İşlemleri/CONNECTION.py), [insert]([Proje - 19] Sqlite3 İşlemleri/INSERT.py) )
 -----------------
 
-| 20 - [Qt Designer ile Tv yayın akışı]([Proje - 20] Qt Designer 18.Proje için/1.py)
+| 20 - [Qt Designer ile Tv yayın akışı]([Proje - 20] Qt Designer ile Tv Yayın Akışı/1.py)
 ---------------------------------------------------------------------------------------------------------------------------
 
 
