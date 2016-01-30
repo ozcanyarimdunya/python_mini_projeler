@@ -38,7 +38,7 @@ class Form(QDialog):
         self.setLayout(layout)
         self.combo.currentIndexChanged.connect(self.get_data)
         self.setWindowTitle("Tv Kanalları Yayın Akışı - beta versiyonu".decode('utf-8'))
-        self.resize(350, 650)
+        self.resize(400, 650)
         self.browser.clear()
         about = "\nBu program @ozcaan11 tarafından \n" \
                 "\n28 Ocak 2016 Perşembe 06:30'da yapılmıştır.\n" \
@@ -46,17 +46,31 @@ class Form(QDialog):
         self.browser.append(about.decode('utf-8'))
 
     def get_data(self):
+        d = ["saat", "program"]
+
         def secim(soup):
+
+            for i in soup.findAll("div", {"class": "row current"}):
+                saat_current = i.contents[1].string
+                prog_current = i.contents[3].string
+                d[0] = saat_current
+                d[1] = prog_current
+
             self.browser.clear()
             for i in soup.findAll("div", {"class": re.compile(r'row.*')}):
                 try:
-                    if not i.contents[1].string is None or i.contents[3].string is None:
+                    if not (i.contents[1].string is None or i.contents[3].string is None):
                         if i.contents[1].string is None or i.contents[3].string is None:
                             pass
                         else:
-                            saat = str(i.contents[1].string).decode('utf-8')
-                            program = str(i.contents[3].string).decode('utf-8') + "\n"
-                            self.browser.append(saat + " - " + program)
+                            if i.contents[1].string == d[0] and i.contents[3].string == d[1]:
+                                saat = str(i.contents[1].string).decode('utf-8')
+                                program = str(i.contents[3].string).decode('utf-8') + "\n"
+                                self.browser.append("=> " + saat + " - " + program)
+                            else:
+                                saat = str(i.contents[1].string).decode('utf-8')
+                                program = str(i.contents[3].string).decode('utf-8') + "\n"
+                                self.browser.append("    " + saat + " - " + program)
 
                 except:
                     pass
