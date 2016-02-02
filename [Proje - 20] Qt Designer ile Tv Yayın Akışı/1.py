@@ -12,6 +12,7 @@ from __future__ import division
 
 import sys
 import urllib
+import re
 
 from BeautifulSoup import *
 from PyQt4.QtGui import *
@@ -66,11 +67,14 @@ class Form(QDialog):
                             if i.contents[1].string == d[0] and i.contents[3].string == d[1]:
                                 saat = str(i.contents[1].string).decode('utf-8')
                                 program = str(i.contents[3].string).decode('utf-8') + "\n"
-                                self.browser.append("=> " + saat + " - " + program)
+                                self.browser.append("=> " + saat + " - " + program.replace('&#39;', "'"))
                             else:
                                 saat = str(i.contents[1].string).decode('utf-8')
                                 program = str(i.contents[3].string).decode('utf-8') + "\n"
-                                self.browser.append("    " + saat + " - " + program)
+                                self.browser.append("    " + saat + " - " + program.replace('&#39;', "'"))
+
+                                # çektiğimiz site ' karakteri &#39; olarak gösteriliyordu onun için
+                                # replace metodunu kullandık
 
                 except:
                     pass
