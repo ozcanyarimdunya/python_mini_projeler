@@ -71,12 +71,17 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 -----------------
 
 | 20 - [Qt Designer ile Tv yayın akışı]([Proje - 20] Qt Designer ile Tv Yayın Akışı/1.py)
----------------------------------------------------------------------------------------------------------------------------
+-----------------
 
+
+----------------------------------------------------------------------------------------------------------
 
 ###Kaynaklar
 
-- http://belgeler.istihza.com/py2/
+| [istihza.com](http://belgeler.istihza.com/py2/)
+-----------------
+
+-----------------------------------------------------------------------------------------------------------
 
 ###Kullandığım Araçlar
 
@@ -87,5 +92,5 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 ---------------
 
 -----------------
-| [@ozcaan11](https://github.com/ozcaan11) 
+| [@ozcaan11](https://twitter.com/ozcaan11) 
 -----------------
