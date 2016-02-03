@@ -32,7 +32,22 @@ class Form(QDialog):
              "Atv",
              "Trt 1",
              "Tv8",
-             "Kanal 7"])
+             "Kanal 7",
+             "A Haber",
+             "CNN Turk",
+             "CNBC-e",
+             "Kanalturk",
+             "Samanyolu",
+             "Ntv",
+             "TNT",
+             "Halk Tv",
+             "GS Tv",
+             "FB Tv",
+             "BJK Tv",
+             "Bursaspor Tv",
+             "Ntvspor",
+             "Ligtv"
+             ])
         layout = QVBoxLayout()
         layout.addWidget(self.combo)
         layout.addWidget(self.browser)
@@ -149,6 +164,118 @@ class Form(QDialog):
         if self.combo.currentIndex() == 8:
             try:
                 kanal = "http://www.tvyayinakisi.com/kanal-7"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 9:
+            try:
+                kanal = "http://www.tvyayinakisi.com/a-haber"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 10:
+            try:
+                kanal = "http://www.tvyayinakisi.com/cnn-turk"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 11:
+            try:
+                kanal = "http://www.tvyayinakisi.com/cnbce"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 12:
+            try:
+                kanal = "http://www.tvyayinakisi.com/kanalturk"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 13:
+            try:
+                kanal = "http://www.tvyayinakisi.com/samanyolu-tv"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 14:
+            try:
+                kanal = "http://www.tvyayinakisi.com/ntv"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 15:
+            try:
+                kanal = "http://www.tvyayinakisi.com/tnt"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 16:
+            try:
+                kanal = "http://www.tvyayinakisi.com/halk-tv"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 17:
+            try:
+                kanal = "http://www.tvyayinakisi.com/gs-tv"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 18:
+            try:
+                kanal = "http://www.tvyayinakisi.com/fb-tv"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 19:
+            try:
+                kanal = "http://www.tvyayinakisi.com/bjk-tv"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 20:
+            try:
+                kanal = "http://www.tvyayinakisi.com/bursaspor-tv"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 21:
+            try:
+                kanal = "http://www.tvyayinakisi.com/ntvspor"
+                soup = BeautifulSoup(urllib.urlopen(kanal))
+                secim(soup)
+            except:
+                no_connection()
+
+        if self.combo.currentIndex() == 22:
+            try:
+                kanal = "http://www.tvyayinakisi.com/lig-tv"
                 soup = BeautifulSoup(urllib.urlopen(kanal))
                 secim(soup)
             except:
