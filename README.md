@@ -73,6 +73,9 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 | 20 - [Qt Designer ile Tv yayın akışı]([Proje - 20] Qt Designer ile Tv Yayın Akışı/1.py)
 -----------------
 
+| 21 - [Qt Designer ile Çarpım Tablosu]([Proje - 21] Çarpım Tablosu GUI/main.py)
+-----------------
+
 
 ----------------------------------------------------------------------------------------------------------
 
