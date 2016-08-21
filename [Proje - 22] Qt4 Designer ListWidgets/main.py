@@ -88,8 +88,7 @@ class Ui_Form(object):
                 self.lblBroadcasting.setText(channel["title" + str(c)])
 
         single_channel = scrapper.SingleChannels(self.link)
-        broadcast = single_channel.getBroadcasting()
-        for i in broadcast:
+        for i in single_channel.getBroadcasting():
             item = QListWidgetItem(i)
             self.lwBroadcast.addItem(item)
 
