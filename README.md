@@ -13,7 +13,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 ###Projeler
 -
 
-| 01 - [Çarpım Tablosu]([Proje - 1] Çarpım Tablosu/1.py)
+| 01 - [Çarpım Tablosu]([Proje - 1] Çarpım Tablosu)
 -----------------
 
 | 02 - [Ligtv, Cnn ve Haberler.com' dan spor haberlerini çekme]([Proje - 2] Ligtv'den Haber Çekme)
@@ -73,7 +73,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 | 20 - [Qt Designer ile Tv yayın akışı]([Proje - 20] Qt Designer ile Tv Yayın Akışı/1.py)
 -----------------
 
-| 21 - [Qt Designer ile Çarpım Tablosu]([Proje - 21] Çarpım Tablosu GUI/main.py)
+| 21 - [Qt Designer ile Çarpım Tablosu]([Proje - 21] Çarpım Tablosu GUI)
 -----------------
 
 | 22 - [[Proje - 22] Qt4 Designer ListWidgets]([Proje - 22] Qt4 Designer ListWidgets)
