@@ -1,4 +1,4 @@
-![](/21/screenshots/1.png)
-![](/21/screenshots/2.png)
-![](/21/screenshots/3.png)
-![](/21/screenshots/4.png)
+![](/screenshots/21/1.png)
+![](/screenshots/21/2.png)
+![](/screenshots/21/3.png)
+![](/screenshots/21/4.png)
