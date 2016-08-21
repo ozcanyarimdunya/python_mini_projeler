@@ -4,9 +4,7 @@ from __future__ import print_function
 
 import os
 from PyQt4 import QtCore, QtGui
-
 from PyQt4.QtGui import *
-
 import scrapper
 
 # region Init
@@ -18,7 +16,6 @@ except AttributeError:
 
 try:
     _encoding = QtGui.QApplication.UnicodeUTF8
-
 
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig, _encoding)
