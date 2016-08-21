@@ -12,7 +12,6 @@ from __future__ import division
 
 import sys
 import urllib
-import re
 
 from BeautifulSoup import *
 from PyQt4.QtGui import *
@@ -97,6 +96,7 @@ class Form(QDialog):
         def no_connection():
             self.browser.clear()
             self.browser.append("İnternet bağlantınızı kontrol edin.".decode('utf-8'))
+
 
         if self.combo.currentIndex() == 0:
             self.browser.clear()
