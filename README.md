@@ -13,31 +13,31 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 ###Projeler
 -
 
-| 1 - [Çarpım Tablosu]([Proje - 1] Çarpım Tablosu/1.py)
+| 01 - [Çarpım Tablosu]([Proje - 1] Çarpım Tablosu/1.py)
 -----------------
 
-| 2 - [Ligtv, Cnn ve Haberler.com' dan spor haberlerini çekme]([Proje - 2] Ligtv'den Haber Çekme)
+| 02 - [Ligtv, Cnn ve Haberler.com' dan spor haberlerini çekme]([Proje - 2] Ligtv'den Haber Çekme)
 -----------------
 
-| 3 - [En büyük ve en küçük sayıyı bulma]([Proje - 3] En Büyük ve En Küçük Sayıyı Bulma/1.py)
+| 03 - [En büyük ve en küçük sayıyı bulma]([Proje - 3] En Büyük ve En Küçük Sayıyı Bulma/1.py)
 -----------------
 
-| 4 - [Simple Encryption and Decryption]([Proje - 4] Simple Encryption and Decryption/simple_encr_decr.py)
+| 04 - [Simple Encryption and Decryption]([Proje - 4] Simple Encryption and Decryption/simple_encr_decr.py)
 -----------------
 
-| 5 - [Hanoi Kuleleri Oyunu]([Proje - 5] Hanoi Kuleleri Oyunu/hanoi.py)
+| 05 - [Hanoi Kuleleri Oyunu]([Proje - 5] Hanoi Kuleleri Oyunu/hanoi.py)
 -----------------
 
-| 6 - [Faktoriyel alma]([Proje - 6] Faktoriyel Alma/fact.py)
+| 06 - [Faktoriyel alma]([Proje - 6] Faktoriyel Alma/fact.py)
 -----------------
 
-| 7 - [Geometrik alan hesaplama]([Proje - 7] Geometrik Şekillerin Alanlarını Hesaplama/1.py)
+| 07 - [Geometrik alan hesaplama]([Proje - 7] Geometrik Şekillerin Alanlarını Hesaplama/1.py)
 -----------------
 
-| 8 - [Zamanlayıcı]([Proje - 8] Zamanlayıcı/zamanlayici.py)
+| 08 - [Zamanlayıcı]([Proje - 8] Zamanlayıcı/zamanlayici.py)
 -----------------
 
-| 9 - [Dosya okuma işlemleri]([Proje - 9] Dosya Okuma/dosya_okuma.py)
+| 09 - [Dosya okuma işlemleri]([Proje - 9] Dosya Okuma/dosya_okuma.py)
 -----------------
 
 | 10 - [Zar atma oyunu]([Proje - 10] Zar Oyunu/zar.py)
