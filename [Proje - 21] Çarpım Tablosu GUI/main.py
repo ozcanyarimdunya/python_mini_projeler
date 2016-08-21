@@ -118,7 +118,7 @@ class Ui_mainForm(object):
         self.comboBox.addItem(_fromUtf8(""))
         self.label = QtGui.QLabel(mainForm)
         self.label.setGeometry(QtCore.QRect(10, 10, 411, 21))
-        self.label.setObjectName(_fromUtf8("label"))
+        self.label.setObjectName(_fromUtf8("lblBroadcasting"))
 
         # This is for the clicked methods
         self.clicked()

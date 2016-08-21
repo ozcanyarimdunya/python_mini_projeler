@@ -76,6 +76,9 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 | 21 - [Qt Designer ile Çarpım Tablosu]([Proje - 21] Çarpım Tablosu GUI/main.py)
 -----------------
 
+| 22 - [[Proje - 22] Qt4 Designer ListWidgets]([Proje - 22] Qt4 Designer ListWidgets/main.py)
+-----------------
+
 
 ----------------------------------------------------------------------------------------------------------
 

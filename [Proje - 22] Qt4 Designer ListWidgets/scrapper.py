@@ -29,24 +29,6 @@ class AllChannels:
             channels.append(ch)
         return channels
 
-    def getChannelLinks(self):
-        channel_urls = []
-        for div in self.soup.findAll("div", {"class": re.compile(r'two columns.*')}):
-            channel_urls.append(div.a['href'])
-        return channel_urls
-
-    def getChannelNames(self):
-        channel_name = []
-        for div in self.soup.findAll("div", {"class": re.compile(r'two columns.*')}):
-            channel_name.append(div.find("a").text)
-        return channel_name
-
-    def getTitles(self):
-        titles = []
-        for div in self.soup.findAll("div", {"class": re.compile(r'two columns.*')}):
-            titles.append(div.a['title'])
-        return titles
-
     def getCount(self):
         return len(self.soup.findAll("div", {"class": re.compile(r'two columns.*')}))
 
@@ -77,22 +59,8 @@ class SingleChannels:
                 if str(program.string).__contains__("&#39;"):
                     str(program.string)
                 broadcast.append(time.string + " " + program.string.replace("&#39;", "'").replace("&rsquo;", "'"))
-        broadcast.pop(0)
+        try:
+            broadcast.pop(0)
+        except:
+            print("No broadcasting !")
         return broadcast
-
-
-"""
-
-urllib.urlretrieve(url,photo_name)
-# This is for the gui
-
-a = AllChannels()
-for i in a.getChannelLinks():
-    try:
-        s = SingleChannels(i)
-        for j in s.getBroadcasting():
-            print(j)
-    except:
-        pass
-    print("\n============================\n")
-"""

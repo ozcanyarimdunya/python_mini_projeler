@@ -32,50 +32,68 @@ except AttributeError:
 """
 
 
-class MyList(QListWidget):
-    def addItemToList(self):
-        """
-            Buraya scrapperdan gelecek veriler eklenecek
-        """
+class Ui_Form(object):
+    def __init__(self):
+        self.link = ""
+
+    def setupUi(self, Form):
+        Form.setObjectName(_fromUtf8("Form"))
+        Form.resize(650, 650)
+
+        self.lwChannels = QtGui.QListWidget(Form)
+        self.lwChannels.setGeometry(QtCore.QRect(10, 10, 250, 630))
+        self.lwChannels.setObjectName(_fromUtf8("lwChannels"))
+
+        self.lwBroadcast = QtGui.QListWidget(Form)
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.lwBroadcast.setFont(font)
+        self.lwBroadcast.setGeometry(QtCore.QRect(270, 70, 370, 570))
+        self.lwBroadcast.setObjectName(_fromUtf8("lwBroadcast"))
+
+
+        self.lblBroadcasting = QtGui.QLabel(Form)
+        self.lblBroadcasting.setGeometry(QtCore.QRect(300, 15, 370, 30))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.lblBroadcasting.setFont(font)
+        self.lblBroadcasting.setWordWrap(True)
+        self.lblBroadcasting.setObjectName(_fromUtf8("lblBroadcasting"))
+
+        self.addItemList()
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        Form.setWindowTitle(_translate("Form", "Form", None))
+        #self.groupBox.setTitle(_translate("Form", "GroupBox", None))
+
+    def addItemList(self):
         channels = scrapper.AllChannels()
         channels.downloadIcons()
 
         for c, channel in enumerate(channels.getChannels()):
             item = QListWidgetItem(channel["name" + str(c)])
             item.setIcon(QIcon(r"icons" + os.sep + str(channel["link" + str(c)])))
-            self.addItem(item)
-        self.itemClicked.connect(self.item_click)
+            self.lwChannels.addItem(item)
+        self.lwChannels.itemClicked.connect(self.item_click)
 
     def item_click(self, item):
-        print(str(item.text()))
+        self.lwBroadcast.clear()
+        channels = scrapper.AllChannels()
+        for c, channel in enumerate(channels.getChannels()):
+            itm = QListWidgetItem(channel["name" + str(c)])
+            if item.text() == itm.text():
+                self.link = str(channel["link" + str(c)])
+                self.lblBroadcasting.setText(channel["title" + str(c)])
 
-
-class Ui_Form(object):
-    def setupUi(self, Form):
-        Form.setObjectName(_fromUtf8("Form"))
-        Form.resize(550, 530)
-
-        """
-            This is a custom ListWidget :)
-        """
-        self.lwChannels = MyList(Form)
-        self.lwChannels.setGeometry(QtCore.QRect(10, 10, 221, 511))
-        self.lwChannels.setObjectName(_fromUtf8("lwChannels"))
-        self.lwBroadcasts = QtGui.QListWidget(Form)
-        self.lwBroadcasts.setGeometry(QtCore.QRect(240, 10, 301, 461))
-        self.lwBroadcasts.setObjectName(_fromUtf8("lwBroadcasts"))
-        self.btnYenile = QtGui.QPushButton(Form)
-        self.btnYenile.setGeometry(QtCore.QRect(240, 480, 301, 41))
-        self.btnYenile.setObjectName(_fromUtf8("btnYenile"))
-
-        self.lwChannels.addItemToList()
-        self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
-
-    def retranslateUi(self, Form):
-        Form.setWindowTitle(_translate("Form", "Form", None))
-        self.btnYenile.setText(_translate("Form", "Yenile", None))
-
+        single_channel = scrapper.SingleChannels(self.link)
+        broadcast = single_channel.getBroadcasting()
+        for i in broadcast:
+            item = QListWidgetItem(i)
+            self.lwBroadcast.addItem(item)
 
 if __name__ == "__main__":
     import sys
