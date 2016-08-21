@@ -8,12 +8,12 @@ from BeautifulSoup import *
 
 BASE_URL = "http://www.tvyayinakisi.com/"
 ALL_CHANNELS_URL = "http://www.tvyayinakisi.com/yayin-akislari"
-BROADCASTING_URL = "http://www.tvyayinakisi.com/"  # + CHANNEL_URL
+BROADCASTING_URL = "http://www.tvyayinakisi.com/"
 
 
 class AllChannels:
     """
-        This is the class which scrap the BASE_URL!
+        This is the class scrap the BASE_URL!
     """
 
     def __init__(self):
@@ -28,9 +28,6 @@ class AllChannels:
             ch["title" + str(c)] = div.a['title']
             channels.append(ch)
         return channels
-
-    def getCount(self):
-        return len(self.soup.findAll("div", {"class": re.compile(r'two columns.*')}))
 
     def downloadIcons(self):
         if not os.path.exists("icons"):
@@ -56,8 +53,6 @@ class SingleChannels:
             time = div.find("div", {"class": "two columns time"})
             program = div.find("div", {"class": "ten columns"})
             if not (time is None and program is None):
-                if str(program.string).__contains__("&#39;"):
-                    str(program.string)
                 broadcast.append(time.string + " " + program.string.replace("&#39;", "'").replace("&rsquo;", "'"))
         try:
             broadcast.pop(0)

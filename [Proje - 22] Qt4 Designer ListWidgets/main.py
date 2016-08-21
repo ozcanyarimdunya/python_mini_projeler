@@ -51,7 +51,6 @@ class Ui_Form(object):
         self.lwBroadcast.setGeometry(QtCore.QRect(270, 70, 370, 570))
         self.lwBroadcast.setObjectName(_fromUtf8("lwBroadcast"))
 
-
         self.lblBroadcasting = QtGui.QLabel(Form)
         self.lblBroadcasting.setGeometry(QtCore.QRect(300, 15, 370, 30))
         font = QtGui.QFont()
@@ -68,7 +67,6 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(_translate("Form", "Form", None))
-        #self.groupBox.setTitle(_translate("Form", "GroupBox", None))
 
     def addItemList(self):
         channels = scrapper.AllChannels()
@@ -94,6 +92,7 @@ class Ui_Form(object):
         for i in broadcast:
             item = QListWidgetItem(i)
             self.lwBroadcast.addItem(item)
+
 
 if __name__ == "__main__":
     import sys
