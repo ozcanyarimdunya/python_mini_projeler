@@ -79,7 +79,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 | 22 - [[Proje - 22] Qt4 Designer ListWidgets]([Proje - 22] Qt4 Designer ListWidgets)
 -----------------
 
-| 22 - [[Proje - 24] Qt4 Ziraat Bankası Tüketici  Kredisi Hesaplama Aracı]([Proje - 23] Qt4 Tüketici Kredisi Hesaplama)
+| 22 - [[Proje - 24] Qt4 Ziraat Bankası Tüketici  Kredisi Hesaplama Aracı]([Proje - 23] Qt4 Tüketici Kredisi Hesaplama Aracı)
 -----------------
 
 
