@@ -47,7 +47,7 @@ def klasor_silme():
 
 def main():
     print("""
-    'os' modülü ile dosya işlemleri
+    'odemeSikligi' modülü ile dosya işlemleri
     -----------------------------
 
     1 - Yeni klasör oluşturma

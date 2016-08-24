@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>581</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Tüketici Kredisi Hesaplama Aracı</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>70</y>
+     <width>561</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Kredi Bilgileri</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>201</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Almak İstediğiniz Kredi Türü</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>40</y>
+      <width>201</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Almak İstediğiniz Kredi Tutarı</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>201</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ödeme Sıklığı</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>110</y>
+      <width>201</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vade (Ay)</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbKt">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>201</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbKtu">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>60</y>
+      <width>201</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbOs">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>201</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbVade">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>130</y>
+      <width>201</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>180</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Faiz Oranı(%)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtFaiz">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>175</y>
+      <width>101</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnHesapla">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>300</y>
+     <width>100</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Hesapla</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTemizle">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>300</y>
+     <width>95</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Temizle</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>400</y>
+     <width>571</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Sıra</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Taksit</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Anapara</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Faiz</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Bakiye</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>KKDF</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>BSMV</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QGroupBox" name="gbSonuclar">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>279</y>
+     <width>291</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>241</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Faiz Oranı      :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>241</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Taksit Tutarı :</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
