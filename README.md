@@ -76,10 +76,10 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 | 21 - [Qt Designer ile Çarpım Tablosu]([Proje - 21] Çarpım Tablosu GUI)
 -----------------
 
-| 22 - [[Proje - 22] Qt4 Designer ListWidgets]([Proje - 22] Qt4 Designer ListWidgets)
+| 22 - [Qt4 Designer ListWidgets]([Proje - 22] Qt4 Designer ListWidgets)
 -----------------
 
-| 22 - [[Proje - 24] Qt4 Ziraat Bankası Tüketici  Kredisi Hesaplama Aracı]([Proje - 23] Qt4 Tüketici Kredisi Hesaplama Aracı)
+| 23 - [Qt4 Ziraat Bankası Tüketici  Kredisi Hesaplama Aracı]([Proje - 23] Qt4 Tüketici Kredisi Hesaplama Aracı)
 -----------------
 
 
