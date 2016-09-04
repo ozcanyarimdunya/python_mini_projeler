@@ -87,6 +87,7 @@ class Ui_mainForm(object):
         self.retranslateUi(mainForm)
         QtCore.QMetaObject.connectSlotsByName(mainForm)
 
+    # ##
     def retranslateUi(self, mainForm):
         mainForm.setWindowTitle(_translate("mainForm", "Form", None))
         self.lblTitle.setText(_translate("mainForm", "Ordu Ticaret Borsası Fındık Fiyatı Sorgulama", None))
@@ -101,8 +102,8 @@ class Ui_mainForm(object):
 
     def result(self):
         self.lblResult.setText("")
-        scrap = Scrapper(self.date.year(), self.date.month(), self.date.day())
-        self.lblResult.setText(str(scrap.getPrice()))
+        data = Scrapper(self.date.year(), self.date.month(), self.date.day())
+        self.lblResult.setText(str(data.getPrice()))
 
 
 # Main

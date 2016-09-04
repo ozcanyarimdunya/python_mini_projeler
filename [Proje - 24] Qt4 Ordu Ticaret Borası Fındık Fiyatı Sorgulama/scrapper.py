@@ -11,27 +11,22 @@ from BeautifulSoup import *
 class Scrapper:
     def __init__(self, year, month, day):
         if month < 10:
-            self.month = "0" + str(month)
-        else:
-            self.month = str(month)
+            month = "0" + str(month)
 
         if day < 10:
-            self.day = "0" + str(day)
-        else:
-            self.day = str(day)
+            day = "0" + str(day)
 
-        self.year = year
-        self.URL = "http://www.ordutb.org.tr/findik?date=" + str(
-            self.year) + "-" + self.month + "-" + self.day + "&secenek=gun#fiyat_sorgula"
-        self.soup = BeautifulSoup(urllib.urlopen(self.URL))
+        url = "http://www.ordutb.org.tr/findik?date=" + str(year) + "-" + str(month) + "-" + str(
+            day) + "&secenek=gun#fiyat_sorgula"
+
+        self.soup = BeautifulSoup(urllib.urlopen(url))
 
     def getPrice(self):
-        a = []
+        data = []
         for i in self.soup.findAll("td"):
             for j in i:
-                a.append(j)
-        if len(a) == 1:
-            return a[0]
+                data.append(j)
+        if len(data) > 1:
+            return data[1] + " : " + data[3]
         else:
-            return a[1]+" : "+a[3]
-
+            return data[0]
