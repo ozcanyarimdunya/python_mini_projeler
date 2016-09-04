@@ -3,7 +3,7 @@
 """
     Proje - 1 de yaptığım çarpım toblosunun arayüz ile yapılmış hali
     Qt4 Designer ile dizaynı tamamladıktan sonra dosyayı kaydedin (örn. design.ui)
-    Terminal ekranında ' pyui4 -x design.ui -o main.py ' yazdığınızda yaptığınız dizaynı
+    Terminal ekranında ' pyui4 -x design.ui -o das.py ' yazdığınızda yaptığınız dizaynı
      sizin için python kodlarına çevirecektir . Gerisi algoritma artık
 
 """
