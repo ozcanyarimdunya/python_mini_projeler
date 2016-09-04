@@ -1,2 +1,3 @@
-![](/screenshots/24/1.png)
-![](/screenshots/24/2.png)
+Veri Yokken    |   Veri varken 
+-----| -----
+![](/screenshots/24/1.png) | ![](/screenshots/24/2.png)
