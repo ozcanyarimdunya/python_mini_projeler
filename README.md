@@ -70,6 +70,8 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 | 19 - [SQLite3 İşlemleri]([Proje - 19] Sqlite3 İşlemleri) ( [connection]([Proje - 19] Sqlite3 İşlemleri/CONNECTION.py), [insert]([Proje - 19] Sqlite3 İşlemleri/INSERT.py) )
 -----------------
 
+### Qt4 Designer
+
 | 20 - [Qt Designer ile Tv yayın akışı]([Proje - 20] Qt Designer ile Tv Yayın Akışı/1.py)
 -----------------
 
@@ -82,7 +84,7 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 | 23 - [Qt4 Ziraat Bankası Tüketici  Kredisi Hesaplama Aracı]([Proje - 23] Qt4 Tüketici Kredisi Hesaplama Aracı)
 -----------------
 
-| 24 - [Qt4 Ordu Ticaret Borsası Fındık Fiyatı Srogulama ]([Proje - 24] Qt4 Ordu Ticaret Borası Fındık Fiyatı Sorgulama)
+| 24 - [Qt4 Ordu Ticaret Borsası Fındık Fiyatı Sorgulama ]([Proje - 24] Qt4 Ordu Ticaret Borası Fındık Fiyatı Sorgulama)
 -----------------
 
 
