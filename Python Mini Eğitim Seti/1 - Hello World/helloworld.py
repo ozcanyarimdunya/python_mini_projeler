@@ -19,7 +19,7 @@
      Gelin pythonda basit bir hello world uygulaması nasıl yazılır ona bakalım
 """
 
-print "Hello World"
+print("Hello World")
 
 """
     Ve uygulamamız tamamdır.

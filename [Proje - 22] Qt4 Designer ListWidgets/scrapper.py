@@ -2,9 +2,10 @@
 from __future__ import print_function
 
 import os
-import urllib
+import re
+import urllib.request
 
-from BeautifulSoup import *
+from bs4 import *
 
 BASE_URL = "http://www.tvyayinakisi.com/"
 ALL_CHANNELS_URL = "http://www.tvyayinakisi.com/yayin-akislari"
@@ -17,7 +18,7 @@ class AllChannels:
     """
 
     def __init__(self):
-        self.soup = BeautifulSoup(urllib.urlopen(ALL_CHANNELS_URL))
+        self.soup = BeautifulSoup(urllib.request.urlopen(ALL_CHANNELS_URL))
 
     def getChannels(self):
         channels = []
@@ -37,7 +38,7 @@ class AllChannels:
             icon_url = div.find("img")["src"]
             if not os.path.isfile("icons" + os.sep + str(channel_url + ".png")):
                 try:
-                    urllib.urlretrieve(str(BASE_URL + icon_url), "icons" + os.sep + str(channel_url + ".png"))
+                    urllib.request.urlretrieve(str(BASE_URL + icon_url), "icons" + os.sep + str(channel_url + ".png"))
                 except:
                     pass
 
@@ -45,7 +46,7 @@ class AllChannels:
 class SingleChannels:
     def __init__(self, url):
         self.url = url
-        self.soup = BeautifulSoup(urllib.urlopen(BROADCASTING_URL + self.url))
+        self.soup = BeautifulSoup(urllib.request.urlopen(BROADCASTING_URL + self.url))
 
     def getBroadcasting(self):
         broadcast = []

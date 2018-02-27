@@ -1,10 +1,11 @@
 """
 
 """
-from simplecrypt import *
+import crypt
+from hmac import compare_digest as compare_hash
 
-enc = encrypt('pass', "hello")
-print enc
+enc = crypt.crypt('pass', "hello")
+print(enc)
 
-dcr = decrypt('pass', enc)
-print dcr
+dcr = compare_hash(enc, crypt.crypt('pass', enc))
+print(dcr)

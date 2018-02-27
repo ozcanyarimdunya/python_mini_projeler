@@ -6,10 +6,10 @@
 """
 
 import re
-import urllib
+import urllib.request
 
 url = "http://www.havadurumu15gunluk.net/havadurumu/eskisehir-hava-durumu-15-gunluk.html"
-site = urllib.urlopen(url).read()
+site = urllib.request.urlopen(url).read().decode('utf-8')
 
 r_gunduz = '<td width="45">&nbsp;&nbsp;(-?\d+)°C</td>'
 r_gece = '<td width="45">&nbsp;(-?\d+)°C</td>'
@@ -44,9 +44,9 @@ for i in re.findall(r_tarih, site):
 for i in re.findall(r_aciklama, site):
     aciklama.append(i)
 
-print "-" * 75
-print "                         ESKİŞEHİR HAVA DURUMU"
-print "-" * 75
+print("-" * 75)
+print("                         ESKİŞEHİR HAVA DURUMU")
+print("-" * 75)
 for i in range(0, len(gun)):
-    print "{} {},\n\t\t\t\t\tgündüz: {} °C\tgece: {} °C\t{}".format(tarih[i],gun[i],gunduz[i],gece[i],aciklama[i])
-    print "-" * 75
+    print("{} {},\n\t\t\t\t\tgündüz: {} °C\tgece: {} °C\t{}".format(tarih[i], gun[i], gunduz[i], gece[i], aciklama[i]))
+    print("-" * 75)

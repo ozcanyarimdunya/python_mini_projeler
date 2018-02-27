@@ -16,61 +16,66 @@ table = db['ogrenci']
 
 
 def ogr_ekle():
-    no = input("öğrenci no: ")
-    ad = raw_input("öğrenci adı: ")
-    soyad = raw_input("öğrenci soyadı: ")
+    no = int(input("öğrenci no: "))
+    ad = input("öğrenci adı: ")
+    soyad = input("öğrenci soyadı: ")
 
     table.insert({"no": int(no), "ad": ad, "soyad": soyad})
     for i in table.find({"no": int(no)}):
-        print """ --- Öğrenci bilgileri eklendi ---
-        numara  : {}
-        ad      : {}
-        soyad   : {}""".format(i['no'], i['ad'], i['soyad'])
+        print(
+        """ --- Öğrenci bilgileri eklendi ---
+               numara  : {}
+               ad      : {}
+               soyad   : {}""".format(i['no'], i['ad'], i['soyad']))
 
 
 def ogr_sil():
-    no = input("silmek istediğiniz öğrencinin numarasını giriniz: ")
+    no = int(input("silmek istediğiniz öğrencinin numarasını giriniz: "))
 
     for i in table.find({"no": int(no)}):
-        print """ --- Öğrenci bilgileri silindi ---
-        numara  : {}
-        ad      : {}
-        soyad   : {}""".format(i['no'], i['ad'], i['soyad'])
+        print(
+            """ --- Öğrenci bilgileri silindi ---
+               numara  : {}
+               ad      : {}
+               soyad   : {}""".format(i['no'], i['ad'], i['soyad']))
 
     table.delete_one({"no": no})
 
 
 def ogr_ara():
-    no = input("aramak istediğiniz öğrencinin numarasını giriniz: ")
+    no = int(input("aramak istediğiniz öğrencinin numarasını giriniz: "))
 
     table.find({"no": no})
     for i in table.find({"no": int(no)}):
-        print """ --- Öğrenci bilgileri bulundu ---
-        numara  : {}
-        ad      : {}
-        soyad   : {}""".format(i['no'], i['ad'], i['soyad'])
+        print(
+        """ --- Öğrenci bilgileri bulundu ---
+               numara  : {}
+               ad      : {}
+               soyad   : {}""".format(i['no'], i['ad'], i['soyad']))
 
 
 def ogr_lis():
     sonuc = table.find()
     for (a, i) in enumerate(sonuc):
-        print """
-        --- {} ---
-        numara  : {}
-        ad      : {}
-        soyad   : {} """.format(a, i['no'], i['ad'], i['soyad'])
+        print(
+        """
+               --- {} ---
+               numara  : {}
+               ad      : {}
+               soyad   : {} """.format(a, i['no'], i['ad'], i['soyad']))
 
 
 def main():
-    print """
-    Öğrenci Kayıt Otomasyonu
-
-    1 - Öğrenci ekle
-    2 - Öğrenci ara
-    3 - Öğrenci sil
-    4 - Öğrenci listesi
+    print(
     """
-    secim = input("Yapmak istediğiniz işlem: ")
+       Öğrenci Kayıt Otomasyonu
+   
+       1 - Öğrenci ekle
+       2 - Öğrenci ara
+       3 - Öğrenci sil
+       4 - Öğrenci listesi
+       """)
+    secim = int(input("Yapmak istediğiniz işlem: "))
     while True:
         if secim == 1:
             ogr_ekle()

@@ -12,42 +12,45 @@ import os
 
 
 def yeni_klasor():
-    dosya = raw_input("Oluşturacağınız klasörün adı: ")
+    dosya = input("Oluşturacağınız klasörün adı: ")
 
     if os.path.exists(dosya):
-        print "{} adında bir klasör zaten var. Başka bir isim seçin. ".format(dosya)
+        print("{} adında bir klasör zaten var. Başka bir isim seçin. ".format(dosya))
     else:
         os.makedirs(dosya)
 
+
 def dizini_listele():
-    print "{}/\n...".format(os.getcwd())
+    print("{}/\n...".format(os.getcwd()))
 
     for a, i in enumerate(os.listdir(os.curdir)):
-        print "{}  {}".format(a, i)
+        print("{}  {}".format(a, i))
+
 
 def klasor_silme():
     dizin = {}
-    print "\nno\t\tdosya adı\n--\t\t---------"
+    print("\nno\t\tdosya adı\n--\t\t---------")
 
     for a, i in enumerate(os.listdir(os.curdir)):
-        print "{}\t\t{}".format(a, i)
+        print("{}\t\t{}".format(a, i))
         dizin[a] = i
 
     try:
-        d_no = input("Silmek istediğiniz dosya numarası: ")
+        d_no = int(input("Silmek istediğiniz dosya numarası: "))
         path = dizin[d_no]
         os.removedirs(path)
 
     except KeyError:
-        print "Klasör silinemedi !"
+        print("KeyError:Klasör silinemedi !")
     except NameError:
-        print "Klasör silinemedi !"
+        print("NameError:Klasör silinemedi !")
     except SyntaxError:
-        print "Klasör silinemedi !"
+        print("SyntaxError:Klasör silinemedi !")
+
 
 def main():
     print("""
-    'odemeSikligi' modülü ile dosya işlemleri
+    'os' modülü ile dosya işlemleri
     -----------------------------
 
     1 - Yeni klasör oluşturma
@@ -56,7 +59,7 @@ def main():
 
     """)
     try:
-        secim_no = input("Yapmak istediğiniz işlem numarası: ")
+        secim_no = int(input("Yapmak istediğiniz işlem numarası: "))
 
         while True:
             if secim_no == 1:
@@ -72,15 +75,16 @@ def main():
                 break
 
             else:
-                print "İşlem seçilmedi !"
+                print("İşlem seçilmedi !")
                 break
 
     except KeyError:
-        print "İşlem seçilmedi !"
+        print("İşlem seçilmedi !")
     except NameError:
-        print "İşlem seçilmedi !"
+        print("İşlem seçilmedi !")
     except SyntaxError:
-        print "İşlem seçilmedi !"
+        print("İşlem seçilmedi !")
+
 
 if __name__ == '__main__':
     main()

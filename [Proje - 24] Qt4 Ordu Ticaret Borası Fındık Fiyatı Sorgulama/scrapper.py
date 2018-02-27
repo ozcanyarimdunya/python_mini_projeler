@@ -3,9 +3,9 @@ from __future__ import print_function
 """
     base_url = http://www.ordutb.org.tr/findik?date=2016-08-29&secenek=gun#fiyat_sorgula
 """
-import urllib
+import urllib.request
 
-from BeautifulSoup import *
+from bs4 import *
 
 
 class Scrapper:
@@ -19,7 +19,7 @@ class Scrapper:
         url = "http://www.ordutb.org.tr/findik?date=" + str(year) + "-" + str(month) + "-" + str(
             day) + "&secenek=gun#fiyat_sorgula"
 
-        self.soup = BeautifulSoup(urllib.urlopen(url))
+        self.soup = BeautifulSoup(urllib.request.urlopen(url))
 
     def getPrice(self):
         data = []

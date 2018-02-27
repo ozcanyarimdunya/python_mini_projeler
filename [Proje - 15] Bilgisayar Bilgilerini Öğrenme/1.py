@@ -11,29 +11,24 @@
 import os
 
 b = os.uname()
-print """
+print(b)
+print("""
     İşletim sistemi : {} {}
     Bilgisayar adı  : {}
-    Model           : {}
     Sürüm           : {}
     Sürüm tarihi    : {}
 """.format(
-    b[0], b[4],
-    b[1],
-    b[3].split('~')[1].split(' ')[0],
-    b[2],
-    b[3].split('-')[1]
-)
-
+    b.sysname, b.machine,
+    b.nodename,
+    b.release,
+    b.version))
 
 """
     Uygulamayı çalıştırdığınızda böyle bir sonuç elde etmeniz lazım
 
-
     İşletim sistemi : Linux x86_64
-    Bilgisayar adı  : MY-LINUX
-    Model           : 14.04.1-Ubuntu
-    Sürüm           : 3.19.0-47-generic
-    Sürüm tarihi    : Ubuntu SMP Mon Jan 18 16:09:14 UTC 2016
+    Bilgisayar adı  : l50a1d2
+    Sürüm           : 4.13.0-36-generic
+    Sürüm tarihi    : #40-Ubuntu SMP Fri Feb 16 20:07:48 UTC 2018
 
 """

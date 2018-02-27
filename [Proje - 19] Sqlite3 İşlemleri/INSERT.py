@@ -22,4 +22,4 @@ islem.execute('''INSERT INTO ogrenci VALUES (?,?,?,?)''', (ogr_ad, ogr_soyad, og
 
 islem.execute("select * from ogrenci")
 for i in islem.fetchall():
-    print i
+    print(i)

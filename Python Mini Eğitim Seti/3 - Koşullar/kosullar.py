@@ -11,16 +11,16 @@
     Örnekte daha anlaşılır olacaktır.
 """
 
-x = 5                                       # x sayısını başta 5'e eşitledik
+x = 5  # x sayısını başta 5'e eşitledik
 
-if x == 5:                                  # eğer x, 5'e eşitse (!!!) burada eşittir koşulu
-    print "x, 5'e eşittir!"                 # == işareti ile ve koşul sonrasında : kullanılması mecburidir
-elif x == 4:                                # elif = else if yani ya da eğer x, 4'e eşitse
-    print "x, 5'e eşit değildir. x = ",x
-elif x != 5:                                # x, 5'e eşit değilse anlamında geliyor != işareti
-    print "x, 5'e eşit değildir!"
-else:                                       # else dan sonra bir koşul belirtilmez!!!!
-    print "x nedir ya?"
+if x == 5:  # eğer x, 5'e eşitse (!!!) burada eşittir koşulu
+    print("x, 5'e eşittir!")  # == işareti ile ve koşul sonrasında : kullanılması mecburidir
+elif x == 4:  # elif = else if yani ya da eğer x, 4'e eşitse
+    print("x, 5'e eşit değildir. x = ", x)
+elif x != 5:  # x, 5'e eşit değilse anlamında geliyor != işareti
+    print("x, 5'e eşit değildir!")
+else:  # else dan sonra bir koşul belirtilmez!!!!
+    print("x nedir ya?")
 
 """
 Output:

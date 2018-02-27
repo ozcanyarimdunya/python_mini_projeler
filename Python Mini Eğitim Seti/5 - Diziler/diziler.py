@@ -7,7 +7,7 @@
 dizi_1 = [45, 13, 32, "özcan", "abc"]
 
 for i in dizi_1:
-    print i
+    print(i)
 
 """
 Output:
@@ -23,6 +23,6 @@ Process finished with exit code 0
 
 # ---------------------------------------------------- #
 
-print dizi_1[0]     # 45
+print(dizi_1[0])  # 45)
 
-print dizi_1[2]     # 32
+print(dizi_1[2])  # 32)

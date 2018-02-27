@@ -4,12 +4,12 @@
     <span class="spotlink">Röportajın çarşamba günü yayınlanan ilk bölümü sizler tarafından büyük ilgi gördü.</span>
 """
 
-import urllib
 import re
+import urllib.request
 
-site = urllib.urlopen('http://www.haberler.com/rss').read()
+site = urllib.request.urlopen('http://www.haberler.com/rss').read().decode('utf-8')
 
-regex_hb = '<span class="spotlink">(.*)</span><span class="hbretkt"'
+regex_hb = r'<span class="spotlink">(.*)</span><span class="hbretkt"'
 r_haber_basligi = re.compile(regex_hb)
 for i in re.findall(r_haber_basligi, site):
-    print i
+    print(i)

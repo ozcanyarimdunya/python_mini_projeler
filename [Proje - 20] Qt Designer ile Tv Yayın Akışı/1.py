@@ -13,7 +13,7 @@ from __future__ import division
 import sys
 import urllib
 
-from BeautifulSoup import *
+from bs4 import *
 from PyQt4.QtGui import *
 
 

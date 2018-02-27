@@ -2,9 +2,10 @@
 
 from __future__ import print_function
 
+import re
 import urllib
 
-from BeautifulSoup import *
+from bs4 import *
 
 """
 

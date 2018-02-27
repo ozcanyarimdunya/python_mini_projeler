@@ -6,7 +6,7 @@
 
 
 def kare(k):
-    print "Karenin alanı = {}".format(k * k)
+    print("Karenin alanı = {}".format(k * k))
 
 
 def dikdortgen(k, u):
@@ -14,15 +14,15 @@ def dikdortgen(k, u):
 
 
 def yamuk(a_t, u_t, y):
-    print "Yamuğun alanı = {}".format(((a_t + u_t) * y) / 2)
+    print("Yamuğun alanı = {}".format(((a_t + u_t) * y) / 2))
 
 
 def paralelkenar(k, y):
-    print "Paralel kenarın alanı = {}".format(k * y)
+    print("Paralel kenarın alanı = {}".format(k * y))
 
 
 def eskenardortgen(a_k, y_k):
-    print "Eşkenar dörtgenin alanı = {}".format((a_k * y_k) / 2)
+    print("Eşkenar dörtgenin alanı = {}".format((a_k * y_k) / 2))
 
 
 if __name__ == '__main__':
@@ -60,6 +60,6 @@ if __name__ == '__main__':
         a = int(input("Eşkenar dörtgenin alt kenar uzunluğu: "))
         y = int(input("Eşkenar dörtgenin yan kenar uzunluğu: "))
         eskenardortgen(a, y)
-        
+
     else:
         print("Sadece belirtilen sayılardan birini giriniz.")

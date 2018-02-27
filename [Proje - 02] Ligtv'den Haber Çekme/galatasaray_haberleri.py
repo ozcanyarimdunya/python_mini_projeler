@@ -8,7 +8,7 @@ import feedparser
     Terminalde  pip install feedparser  yapıp çalıştırsanız yeterli olacaktır
 """
 
-print ('''
+print('''
     ######################################
     #                                    #
     #    Ligtv Galatasaray Haberleri     #
@@ -19,6 +19,6 @@ haberler_galatasaray = feedparser.parse('http://www.ligtv.com.tr/rss/takim/galat
 
 i = 1
 for haber in haberler_galatasaray.entries:
-    print i, haber.title
-    print "  ", haber.guid, "\n"
+    print(i, haber.title)
+    print("  ", haber.guid, "\n")
     i += 1

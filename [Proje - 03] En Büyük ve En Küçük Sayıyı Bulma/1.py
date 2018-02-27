@@ -9,22 +9,22 @@ sayilar = []
 flag = True
 while flag:
     try:
-        a = input("Sayıları girin(çıkış için -1): ")
+        a = int(input("Sayıları girin(çıkış için -1): "))
         if a == -1:
             flag = False
         else:
             sayilar.append(float(a))
     except SyntaxError:
-        print "HATA: Yalnızca sayı girin !"
+        print("HATA: Yalnızca sayı girin !")
     except NameError:
-        print "HATA: Yalnızca sayı girin !"
+        print("HATA: Yalnızca sayı girin !")
 
 try:
     en_buyuk = sayilar[0]
     en_kucuk = sayilar[0]
     ortalama = sayilar[0]
 except IndexError:
-    print "\nEn az bir sayı girmelisiniz"
+    print("\nEn az bir sayı girmelisiniz")
     en_buyuk = "yok"
     en_kucuk = "yok"
     ortalama = "yok"
@@ -38,8 +38,8 @@ for sayi in sayilar:
         en_kucuk = sayi
     toplam += sayi
 
-ortalama = toplam/len(sayilar)
+ortalama = toplam / len(sayilar)
 
-print "\nen büyük sayı = {}\n" \
-        "en küçük sayı = {}\n" \
-        "ortalama      = {}".format(en_buyuk, en_kucuk, ortalama)
+print("\nen büyük sayı = {}\n" \
+      "en küçük sayı = {}\n" \
+      "ortalama      = {}".format(en_buyuk, en_kucuk, ortalama))

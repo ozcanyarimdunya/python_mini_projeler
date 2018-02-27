@@ -4,7 +4,7 @@
     Girdiğimiz bir sayıya kadar ki asal olan bütün sayıları listeleme
 """
 
-deger = input("Kaça kadar ki asal sayıları arıyorsunuz? : ")
+deger = int(input("Kaça kadar ki asal sayıları arıyorsunuz? : "))
 asal = []
 
 for i in range(2, deger):
@@ -17,6 +17,6 @@ for i in range(2, deger):
         asal.append(i)
 
 for i in asal:
-    print i
+    print(i)
 
-print "\n0 - {} arasında toplam {} tane asal sayı vardır.".format(deger, len(asal))
+print("\n0 - {} arasında toplam {} tane asal sayı vardır.".format(deger, len(asal)))
