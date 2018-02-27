@@ -12,12 +12,9 @@ Bütün proje dosyalarına gerekli açıklamaları ayrıntılı bir şekilde yaz
 
 ### Kullandığım Araçlar
 
-| 1 - [Ubuntu LTS 14.04 - 17.10 ](http://www.ubuntu.com/download)
----------------
+1. [Ubuntu LTS 14.04 - 17.10 ](http://www.ubuntu.com/download)
 
-| 2 - [PyCharm Community Edition 5.0.3 - 2017.3.3](https://www.jetbrains.com/pycharm-edu/download/)
+2. [PyCharm Community Edition 5.0.3 - 2017.3.3](https://www.jetbrains.com/pycharm-edu/download/)
 ---------------
-
------------------
-| [@ozcanyarimdunya](https://semiworld.org) 
------------------
+ 
+#### [@ozcanyarimdunya](http://semiworld.org) 
