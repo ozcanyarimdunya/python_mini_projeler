@@ -77,7 +77,8 @@ class RealPython:
             image = tut.find('img').attrs.get('src')
             url = self.base_url + tut.find('a').attrs.get('href')
             title = tut.find('h2', {"class": "card-title"}).text
-
+            
+            # Insert scrapped data to database
             self.insert(image=image, url=url, title=title)
 
     def print(self):
