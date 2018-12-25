@@ -28,6 +28,10 @@ class RealPython:
     base_url = "https://realpython.com"
 
     def __init__(self):
+        """
+        Initialise method RealPython class
+        :return: None
+        """
         # check if table already exists, if yes then delete it
         self.db.query(
             """DROP TABLE IF EXISTS TUTORIAL"""
@@ -79,7 +83,7 @@ class RealPython:
     def print(self):
         """
         Select all data from database then print it row by row
-        :return:
+        :return: None
         """
         all_data = self.db.query(
             """SELECT * FROM TUTORIAL"""
@@ -102,13 +106,13 @@ class RealPython:
 
 
 # create an instance of RealPython class
-r = RealPython()
+rp = RealPython()
 
 # run scrap method
-r.scrap()
+rp.scrap()
 
 # print method
-r.print()
+rp.print()
 
 # Output
 """
