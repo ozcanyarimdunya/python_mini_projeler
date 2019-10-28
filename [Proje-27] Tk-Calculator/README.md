@@ -1,1 +1,0 @@
-![calculator.png](./calc.png)
