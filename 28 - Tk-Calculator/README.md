@@ -8,4 +8,4 @@ python3 calculator.py
 
 
 
-![calculator.png](./calc.png)
+![calculator.png](../assets/28/calc.png)
