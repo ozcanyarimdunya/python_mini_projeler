@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from CONNECTION import islem
+from baglanti import islem
 
 # TABLOYA VERİ EKLEME
 # tablomuza veri ekleme kısmı en kolayı parantez içinde ad.soyad kısımlarını yazmayadabilirdik

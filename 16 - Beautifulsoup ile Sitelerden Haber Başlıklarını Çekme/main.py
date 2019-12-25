@@ -3,7 +3,7 @@
     beautifulsoup ile bir siteden veri çekme
 """
 
-import urllib.request
+import requests
 
 from bs4 import *
 
@@ -18,13 +18,13 @@ from bs4 import *
 """
 
 headers = {'user_agent': 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'}
-req = urllib.request.Request(url="http://yusufcakmak.com", headers=headers)
+url="http://yusufcakmak.com"
 
-html = urllib.request.urlopen(req).read().decode('utf-8')
+html = requests.get(url, headers=headers).content.decode('utf-8')
 
-soup = BeautifulSoup(html)
+soup = BeautifulSoup(html, "html.parser")
 
-basliklar = soup.findAll("h2", {"class": "post_title"})
+basliklar = soup.findAll("h2", {"class": "bwp-post-title entry-title"})
 
 for a, i in enumerate(basliklar):
-    print(a + 1, i.next.next, i.a['href'])
+    print(a + 1, i.a.text, i.a['href'])

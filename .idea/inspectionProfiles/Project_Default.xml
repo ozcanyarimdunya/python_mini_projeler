@@ -19,5 +19,12 @@
         </list>
       </option>
     </inspection_tool>
+    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="PyQt5-stubs==5.13.1.3" />
+        </list>
+      </option>
+    </inspection_tool>
   </profile>
 </component>

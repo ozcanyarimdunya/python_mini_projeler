@@ -6,10 +6,10 @@
 """
 
 import re
-import urllib.request
+import requests
 
 url = "http://www.havadurumu15gunluk.net/havadurumu/eskisehir-hava-durumu-15-gunluk.html"
-site = urllib.request.urlopen(url).read().decode('utf-8')
+site = requests.get(url).content.decode('utf-8')
 
 r_gunduz = '<td width="45">&nbsp;&nbsp;(-?\d+)°C</td>'
 r_gece = '<td width="45">&nbsp;(-?\d+)°C</td>'

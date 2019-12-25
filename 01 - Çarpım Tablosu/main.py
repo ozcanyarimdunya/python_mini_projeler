@@ -13,11 +13,12 @@ print("-" * 50, "\n")
 
 
 def carpim(i, j, r):
-    if r != -1:
-        if i * j == r:
+    if r != "-1":
+        result = str(i * j)
+        if result == r:
             print("\t\t***** Doğru *****")
         else:
-            print("\t!!! Yanlış cevap %s olacaktı" % (i * j))
+            print("\t!!! Yanlış cevap %s olacaktı" % result)
     else:
 
         secim()
@@ -51,19 +52,19 @@ def secim():
 
     svy = input(" >> ")
 
-    if svy == 1:
+    if svy == "1":
         basla(1, 6)
 
-    if svy == 2:
+    elif svy == "2":
         basla(6, 12)
 
-    if svy == 3:
+    elif svy == "3":
         basla(12, 25)
 
-    if svy == 4:
+    elif svy == "4":
         basla(25, 100)
 
-    if svy == -1:
+    else:
         exit(0)
 
 

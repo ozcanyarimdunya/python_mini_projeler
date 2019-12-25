@@ -11,7 +11,7 @@
 """
 from pymongo import MongoClient
 
-db = MongoClient()['db_ogrenciler']
+db = MongoClient(host='localhost', port=27017)['db_ogrenciler']
 table = db['ogrenci']
 
 
@@ -23,10 +23,10 @@ def ogr_ekle():
     table.insert({"no": int(no), "ad": ad, "soyad": soyad})
     for i in table.find({"no": int(no)}):
         print(
-        """ --- Öğrenci bilgileri eklendi ---
-               numara  : {}
-               ad      : {}
-               soyad   : {}""".format(i['no'], i['ad'], i['soyad']))
+            """ --- Öğrenci bilgileri eklendi ---
+                   numara  : {}
+                   ad      : {}
+                   soyad   : {}""".format(i['no'], i['ad'], i['soyad']))
 
 
 def ogr_sil():
@@ -48,33 +48,33 @@ def ogr_ara():
     table.find({"no": no})
     for i in table.find({"no": int(no)}):
         print(
-        """ --- Öğrenci bilgileri bulundu ---
-               numara  : {}
-               ad      : {}
-               soyad   : {}""".format(i['no'], i['ad'], i['soyad']))
+            """ --- Öğrenci bilgileri bulundu ---
+                   numara  : {}
+                   ad      : {}
+                   soyad   : {}""".format(i['no'], i['ad'], i['soyad']))
 
 
 def ogr_lis():
     sonuc = table.find()
     for (a, i) in enumerate(sonuc):
         print(
-        """
-               --- {} ---
-               numara  : {}
-               ad      : {}
-               soyad   : {} """.format(a, i['no'], i['ad'], i['soyad']))
+            """
+                   --- {} ---
+                   numara  : {}
+                   ad      : {}
+                   soyad   : {} """.format(a, i['no'], i['ad'], i['soyad']))
 
 
 def main():
     print(
-    """
-       Öğrenci Kayıt Otomasyonu
-   
-       1 - Öğrenci ekle
-       2 - Öğrenci ara
-       3 - Öğrenci sil
-       4 - Öğrenci listesi
-       """)
+        """
+           Öğrenci Kayıt Otomasyonu
+       
+           1 - Öğrenci ekle
+           2 - Öğrenci ara
+           3 - Öğrenci sil
+           4 - Öğrenci listesi
+           """)
     secim = int(input("Yapmak istediğiniz işlem: "))
     while True:
         if secim == 1:

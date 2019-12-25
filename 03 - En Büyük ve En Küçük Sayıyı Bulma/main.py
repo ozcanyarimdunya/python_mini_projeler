@@ -9,7 +9,7 @@ sayilar = []
 flag = True
 while flag:
     try:
-        a = int(input("Sayıları girin(çıkış için -1): "))
+        a = int(input("Sayıları girin(bitirmek için -1): "))
         if a == -1:
             flag = False
         else:

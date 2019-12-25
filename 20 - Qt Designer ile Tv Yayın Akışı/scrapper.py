@@ -1,8 +1,5 @@
 # coding=utf-8
 
-"""
-Tv kanalları yayın akışı
-"""
 import requests
 
 from bs4 import BeautifulSoup
@@ -45,29 +42,3 @@ def get_streams(url):
         })
 
     return streams
-
-
-def print_channels(channels):
-    for channel in channels:
-        print(channel['order'], '-', channel['name'])
-
-
-def print_streams(streams):
-    for stream in streams:
-        print("[{}] {} {}".format(
-            stream['time'], stream['type'].ljust(15), stream['name']
-        ))
-
-
-def main():
-    print("Select a channel\n")
-    channels = get_channels()
-    print_channels(channels)
-    choice = int(input('>> '))
-    selected = channels[choice - 1]  # index starts from 0
-    streams = get_streams(selected['url'])
-    print_streams(streams)
-
-
-if __name__ == '__main__':
-    main()
