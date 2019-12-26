@@ -1,0 +1,11 @@
+beautifulsoup4==4.8.2
+certifi==2019.11.28
+chardet==3.0.4
+feedparser==5.2.1
+idna==2.8
+pymongo==3.10.0
+PyQt5==5.14.0
+PyQt5-sip==12.7.0
+requests==2.22.0
+soupsieve==1.9.5
+urllib3==1.25.7

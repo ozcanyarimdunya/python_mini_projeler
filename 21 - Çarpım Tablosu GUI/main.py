@@ -57,13 +57,20 @@ class MainWindow(QMainWindow):
         correct_answer = str(self.num1 * self.num2)
         user_answer = self.txt_result.text()
         self.txt_result.setText('')
-        self.start()
 
-        self.lbl_result.setText(correct_answer)
         if correct_answer == user_answer:
+            result = "{}x{}={}".format(
+                self.num1, self.num2, correct_answer
+            )
             self.lbl_result.setStyleSheet('color: green')
         else:
+            result = "{}x{}={} >> {}".format(
+                self.num1, self.num2, user_answer, correct_answer
+            )
             self.lbl_result.setStyleSheet('color: red')
+        self.lbl_result.setText(result)
+
+        self.start()
 
 
 if __name__ == "__main__":
