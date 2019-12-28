@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>521</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kredi Hesaplama</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tab_widget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>481</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_ihtiyac">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>assets/ihtiyac.png</normaloff>assets/ihtiyac.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>İhtiyaç Kredisi</string>
+     </attribute>
+     <widget class="QWidget" name="widget_calculator" native="true">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>10</y>
+        <width>311</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <widget class="QDoubleSpinBox" name="sb_amount">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>181</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="suffix">
+        <string> TL</string>
+       </property>
+       <property name="minimum">
+        <double>1000.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>99999999.989999994635582</double>
+       </property>
+       <property name="singleStep">
+        <double>100.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cb_maturity">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>60</y>
+         <width>181</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_calculate">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>291</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Kredi Hesapla</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_amount">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>111</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Kredi Tutarı</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl_maturity">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>111</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Vade (ay)</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_konut">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>assets/konut.png</normaloff>assets/konut.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Konut Kredisi</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_tasit">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>assets/tasit.png</normaloff>assets/tasit.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Taşıt Kredisi</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_kobi">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>assets/kobi.png</normaloff>assets/kobi.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Kobi Kredisi</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Kredi Hesaplama</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tbl_result">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>481</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>true</bool>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>tab_widget</tabstop>
+  <tabstop>sb_amount</tabstop>
+  <tabstop>cb_maturity</tabstop>
+  <tabstop>btn_calculate</tabstop>
+  <tabstop>tbl_result</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
