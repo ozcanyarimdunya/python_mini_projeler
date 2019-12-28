@@ -1,9 +1,9 @@
 import sys
 
 from PyQt5 import uic
-from PyQt5.QtCore import QThread, pyqtSignal, QModelIndex
+from PyQt5.QtCore import QThread, pyqtSignal
 from PyQt5.QtGui import QIcon, QPixmap
-from PyQt5.QtWidgets import QApplication, QMainWindow, QStatusBar, QComboBox, QListWidget, QListWidgetItem, QLabel, \
+from PyQt5.QtWidgets import QApplication, QMainWindow, QStatusBar, QListWidget, QListWidgetItem, QLabel, \
     QGraphicsView
 from scrapper import get_channels, get_streams
 

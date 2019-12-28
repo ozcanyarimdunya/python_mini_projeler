@@ -1,11 +1,10 @@
 import sys
 
 from PyQt5 import uic
-from PyQt5.QtCore import QThread, pyqtSignal, QModelIndex, QRect, QSize
-from PyQt5.QtGui import QIcon, QPixmap
-from PyQt5.QtWidgets import QApplication, QMainWindow, QStatusBar, QComboBox, QListWidget, QListWidgetItem, QLabel, \
-    QGraphicsView, QDoubleSpinBox, QPushButton, QTabWidget, QWidget, QTableWidgetItem, QTableWidget
-
+from PyQt5.QtCore import QThread, pyqtSignal, QSize
+from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import QApplication, QMainWindow, QStatusBar, QComboBox, QLabel, \
+    QDoubleSpinBox, QPushButton, QTabWidget, QWidget, QTableWidgetItem, QTableWidget
 from scrapper import get_data
 
 
@@ -85,7 +84,6 @@ class MainWindow(QMainWindow):
         self.tbl_result.setIconSize(QSize(60, 60))
         self.tbl_result.setSortingEnabled(True)
 
-
         for row, data in enumerate(credit):
             item = QTableWidgetItem()
             item.setIcon(QIcon(data.get('logo')))
@@ -93,8 +91,8 @@ class MainWindow(QMainWindow):
             self.tbl_result.setItem(row, 0, item)
             self.tbl_result.setItem(row, 1, QTableWidgetItem(data.get('BankName')))
             self.tbl_result.setItem(row, 2, QTableWidgetItem(data.get('InterestRate')))
-            self.tbl_result.setItem(row, 3, QTableWidgetItem(data.get('TotalPaybackAmnt')+" TL"))
-            self.tbl_result.setItem(row, 4, QTableWidgetItem(data.get('MonthlyInstallment')+" TL"))
+            self.tbl_result.setItem(row, 3, QTableWidgetItem(data.get('TotalPaybackAmnt') + " TL"))
+            self.tbl_result.setItem(row, 4, QTableWidgetItem(data.get('MonthlyInstallment') + " TL"))
 
     def on_tab_change(self, index):
         tab = getattr(self, self.mappings[index][1])
