@@ -9,6 +9,11 @@ from bs4 import BeautifulSoup
 
 
 def get_channels():
+    """
+    Get list of the page
+
+    Args:
+    """
     url = "https://www.tvyayinakisi.com/"
     html = requests.get(url).content.decode('utf-8')
     soup = BeautifulSoup(html, 'html.parser')
@@ -28,6 +33,12 @@ def get_channels():
 
 
 def get_streams(url):
+    """
+    Parse a list of urls.
+
+    Args:
+        url: (str): write your description
+    """
     html = requests.get(url).content.decode('utf-8')
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -48,11 +59,23 @@ def get_streams(url):
 
 
 def print_channels(channels):
+    """
+    Print out the channel.
+
+    Args:
+        channels: (int): write your description
+    """
     for channel in channels:
         print(channel['order'], '-', channel['name'])
 
 
 def print_streams(streams):
+    """
+    Print streams
+
+    Args:
+        streams: (todo): write your description
+    """
     for stream in streams:
         print("[{}] {} {}".format(
             stream['time'], stream['type'].ljust(15), stream['name']
@@ -60,6 +83,11 @@ def print_streams(streams):
 
 
 def main():
+    """
+    Main function.
+
+    Args:
+    """
     print("Select a channel\n")
     channels = get_channels()
     print_channels(channels)

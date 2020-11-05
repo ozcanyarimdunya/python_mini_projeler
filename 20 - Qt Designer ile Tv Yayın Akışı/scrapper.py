@@ -6,6 +6,11 @@ from bs4 import BeautifulSoup
 
 
 def get_channels():
+    """
+    Get list of the page
+
+    Args:
+    """
     url = "https://www.tvyayinakisi.com/"
     html = requests.get(url).content.decode('utf-8')
     soup = BeautifulSoup(html, 'html.parser')
@@ -25,6 +30,12 @@ def get_channels():
 
 
 def get_streams(url):
+    """
+    Parse a list of urls.
+
+    Args:
+        url: (str): write your description
+    """
     html = requests.get(url).content.decode('utf-8')
     soup = BeautifulSoup(html, 'html.parser')
 

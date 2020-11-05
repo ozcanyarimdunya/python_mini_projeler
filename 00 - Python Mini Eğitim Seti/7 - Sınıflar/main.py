@@ -32,6 +32,12 @@ class MyClass:
         self.__privateValue = "private value"
 
     def printing(self):
+        """
+        Prints the private key.
+
+        Args:
+            self: (todo): write your description
+        """
         print("""
         printing function
             name  : {}
@@ -40,6 +46,13 @@ class MyClass:
         """.format(self.name,self.number,self.__privateValue))
 
     def makePrivateAccessible(self,publicValue):
+        """
+        Make a privatekey.
+
+        Args:
+            self: (todo): write your description
+            publicValue: (str): write your description
+        """
         self.__privateValue = publicValue
 
     def OutSideFunc(self):

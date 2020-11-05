@@ -16,6 +16,11 @@ table = db['ogrenci']
 
 
 def ogr_ekle():
+    """
+    Ogogle changes
+
+    Args:
+    """
     no = int(input("öğrenci no: "))
     ad = input("öğrenci adı: ")
     soyad = input("öğrenci soyadı: ")
@@ -30,6 +35,11 @@ def ogr_ekle():
 
 
 def ogr_sil():
+    """
+    Delete all tables
+
+    Args:
+    """
     no = int(input("silmek istediğiniz öğrencinin numarasını giriniz: "))
 
     for i in table.find({"no": int(no)}):
@@ -43,6 +53,11 @@ def ogr_sil():
 
 
 def ogr_ara():
+    """
+    Prints the user input
+
+    Args:
+    """
     no = int(input("aramak istediğiniz öğrencinin numarasını giriniz: "))
 
     table.find({"no": no})
@@ -55,6 +70,11 @@ def ogr_ara():
 
 
 def ogr_lis():
+    """
+    Pretty print out the indices
+
+    Args:
+    """
     sonuc = table.find()
     for (a, i) in enumerate(sonuc):
         print(
@@ -66,6 +86,11 @@ def ogr_lis():
 
 
 def main():
+    """
+    Main function.
+
+    Args:
+    """
     print(
         """
            Öğrenci Kayıt Otomasyonu

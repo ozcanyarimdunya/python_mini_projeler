@@ -6,21 +6,46 @@ except ImportError:
 
 class Calculator:
     def __init__(self):
+        """
+        Initialize the stack.
+
+        Args:
+            self: (todo): write your description
+        """
         self._stack = []
         self._valid = [
             '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '-', '*', '/'
         ]
 
     def add(self, text):
+        """
+        Add text to the stack
+
+        Args:
+            self: (todo): write your description
+            text: (str): write your description
+        """
         if text not in self._valid:
             return ''
         self._stack.append(text)
         return text
 
     def get(self):
+        """
+        Returns a string representation of this stack.
+
+        Args:
+            self: (todo): write your description
+        """
         return ''.join(self._stack)
 
     def evaluate(self):
+        """
+        Evaluate the expression.
+
+        Args:
+            self: (dict): write your description
+        """
         try:
             result = eval(self.get())
         except Exception as ex:
@@ -29,6 +54,12 @@ class Calculator:
         return str(result)
 
     def reset(self):
+        """
+        Reset the stack.
+
+        Args:
+            self: (todo): write your description
+        """
         self._stack = []
 
 
@@ -36,6 +67,12 @@ class Window(tk.Tk):
     is_reset = True
 
     def __init__(self):
+        """
+        Initialize widget
+
+        Args:
+            self: (todo): write your description
+        """
         super().__init__()
 
         self.calculator = Calculator()
@@ -116,6 +153,12 @@ class Window(tk.Tk):
         self.init_events()
 
     def init_events(self):
+        """
+        Initialize key events.
+
+        Args:
+            self: (todo): write your description
+        """
         # button events
         self.btn_0.bind('<Button-1>', func=lambda event: self.key_clicked('0'))
         self.btn_1.bind('<Button-1>', func=lambda event: self.key_clicked('1'))
@@ -141,6 +184,13 @@ class Window(tk.Tk):
         self.bind('<Key>', func=lambda event: self.key_clicked(event.char))
 
     def key_clicked(self, key):
+        """
+        Triggers the key when button.
+
+        Args:
+            self: (todo): write your description
+            key: (str): write your description
+        """
         if self.is_reset:
             self.result.set('')
             self.is_reset = False
@@ -148,15 +198,33 @@ class Window(tk.Tk):
         self.result.set(self.result.get() + self.calculator.add(key))
 
     def enter_clicked(self):
+        """
+        Clears the button clicked.
+
+        Args:
+            self: (todo): write your description
+        """
         self.result.set(self.result.get() + '=' + self.calculator.evaluate())
         self.calculator.reset()
         self.is_reset = True
 
     def clear_clicked(self):
+        """
+        Clears the button.
+
+        Args:
+            self: (todo): write your description
+        """
         self.result.set('')
         self.calculator.reset()
 
     def get_geometry(self):
+        """
+        Returns the geometry
+
+        Args:
+            self: (todo): write your description
+        """
         width = height = 320
         x = (self.winfo_screenwidth() // 2) - (width // 2)
         y = (self.winfo_screenheight() // 2) - (height // 2)

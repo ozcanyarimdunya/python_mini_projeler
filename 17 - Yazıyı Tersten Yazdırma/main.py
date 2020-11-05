@@ -23,6 +23,13 @@ yazinin_tersi = ""
 
 
 def tersini_alma(yazi, tersi):
+    """
+    Calculate the yazi of the yazi.
+
+    Args:
+        yazi: (todo): write your description
+        tersi: (todo): write your description
+    """
     for i in range(len(yazi) - 1, -1, -1):
         tersi += yazi[i]
     return tersi

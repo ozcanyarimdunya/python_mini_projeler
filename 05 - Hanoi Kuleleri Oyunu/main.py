@@ -10,6 +10,15 @@
 
 
 def hanoi(n, s, t, b):
+    """
+    Hanoi equation
+
+    Args:
+        n: (todo): write your description
+        s: (todo): write your description
+        t: (todo): write your description
+        b: (todo): write your description
+    """
     assert n > 0
     if n == 1:
         print('move', s, 'to', t)

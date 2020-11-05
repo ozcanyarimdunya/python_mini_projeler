@@ -12,6 +12,12 @@ class ChannelsThread(QThread):
     onFinish = pyqtSignal(str)
 
     def run(self):
+        """
+        Emits the channel.
+
+        Args:
+            self: (todo): write your description
+        """
         self.onStart.emit("Loading channels ..")
 
         channels = get_channels()
@@ -26,10 +32,23 @@ class StreamsThread(QThread):
     onFinish = pyqtSignal(str)
 
     def __init__(self, url):
+        """
+        Initialize the url.
+
+        Args:
+            self: (todo): write your description
+            url: (str): write your description
+        """
         super().__init__()
         self.url = url
 
     def run(self):
+        """
+        Emits the stream
+
+        Args:
+            self: (todo): write your description
+        """
         self.onStart.emit("Loading streams ..")
 
         streams = get_streams(self.url)
@@ -47,18 +66,37 @@ class MainWindow(QMainWindow):
     channels = list()
 
     def __init__(self, flags=None, *args, **kwargs):
+        """
+        Initialize this class.
+
+        Args:
+            self: (todo): write your description
+            flags: (int): write your description
+        """
         super().__init__(flags, *args, **kwargs)
 
         uic.loadUi('form.ui', self)
         self.initialise()
 
     def initialise(self):
+        """
+        Initialise the channel.
+
+        Args:
+            self: (todo): write your description
+        """
         self.set_channels()
         self.cb_channels.currentIndexChanged.connect(
             lambda i: self.set_streams(self.channels[i]['url'])
         )
 
     def set_channels(self):
+        """
+        Set the channel channels.
+
+        Args:
+            self: (todo): write your description
+        """
         self.channels_thread = ChannelsThread()
         self.channels_thread.onStart.connect(lambda msg: self.statusbar.showMessage(msg))
         self.channels_thread.onFinish.connect(lambda msg: self.statusbar.showMessage(msg))
@@ -66,6 +104,13 @@ class MainWindow(QMainWindow):
         self.channels_thread.start()
 
     def set_streams(self, url):
+        """
+        Set all streams on the given url.
+
+        Args:
+            self: (todo): write your description
+            url: (str): write your description
+        """
         self.streams_thread = StreamsThread(url)
         self.streams_thread.onStart.connect(lambda msg: self.statusbar.showMessage(msg))
         self.streams_thread.onFinish.connect(lambda msg: self.statusbar.showMessage(msg))
@@ -73,11 +118,25 @@ class MainWindow(QMainWindow):
         self.streams_thread.start()
 
     def on_scrapped_channels(self, channels):
+        """
+        Add channel channels.
+
+        Args:
+            self: (todo): write your description
+            channels: (int): write your description
+        """
         self.channels = channels
         for channel in self.channels:
             self.cb_channels.addItem(channel['name'])
 
     def on_scrapped_streams(self, streams):
+        """
+        Add streams on streams
+
+        Args:
+            self: (todo): write your description
+            streams: (todo): write your description
+        """
         self.lw_streams.clear()
         data = []
         for stream in streams:

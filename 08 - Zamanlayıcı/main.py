@@ -11,6 +11,11 @@ import platform
 
 
 def temizle():
+    """
+    Temizle - os
+
+    Args:
+    """
     if platform.system() == 'Linux' or platform.system() == 'Darwin':
         os.system('clear')
     else:

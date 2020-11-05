@@ -6,22 +6,57 @@
 
 
 def kare(k):
+    """
+    Kare kare kares
+
+    Args:
+        k: (todo): write your description
+    """
     print("Karenin alanı = {}".format(k * k))
 
 
 def dikdortgen(k, u):
+    """
+    Dikdortdortgen.
+
+    Args:
+        k: (todo): write your description
+        u: (todo): write your description
+    """
     print("Dikdörtgenin alanı = {}".format(k * u))
 
 
 def yamuk(a_t, u_t, y):
+    """
+    Yamuk of yampling
+
+    Args:
+        a_t: (todo): write your description
+        u_t: (todo): write your description
+        y: (todo): write your description
+    """
     print("Yamuğun alanı = {}".format(((a_t + u_t) * y) / 2))
 
 
 def paralelkenar(k, y):
+    """
+    Paralelelken test of k
+
+    Args:
+        k: (todo): write your description
+        y: (todo): write your description
+    """
     print("Paralel kenarın alanı = {}".format(k * y))
 
 
 def eskenardortgen(a_k, y_k):
+    """
+    Generate k_kortgenortortgenardardort
+
+    Args:
+        a_k: (todo): write your description
+        y_k: (todo): write your description
+    """
     print("Eşkenar dörtgenin alanı = {}".format((a_k * y_k) / 2))
 
 

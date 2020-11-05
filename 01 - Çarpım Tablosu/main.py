@@ -13,6 +13,14 @@ print("-" * 50, "\n")
 
 
 def carpim(i, j, r):
+    """
+    Carpim ( i j
+
+    Args:
+        i: (todo): write your description
+        j: (todo): write your description
+        r: (todo): write your description
+    """
     if r != "-1":
         result = str(i * j)
         if result == r:
@@ -25,6 +33,13 @@ def carpim(i, j, r):
 
 
 def basla(rng_1, rng_2):
+    """
+    Generate a random basis set.
+
+    Args:
+        rng_1: (todo): write your description
+        rng_2: (todo): write your description
+    """
     if rng_1 > 10:
         x = 10
     else:
@@ -44,6 +59,11 @@ def basla(rng_1, rng_2):
 
 
 def secim():
+    """
+    Print the secimus
+
+    Args:
+    """
     print(" Hangi seviyeden başlamak istiyorsunuz (çıkış = -1) ?\n")
     print("  1 - Kolay ")
     print("  2 - Orta ")
