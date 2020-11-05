@@ -13,6 +13,12 @@ LEVELS = {
 
 
 def get_randoms(level):
+    """
+    Returns a list of random numbers.
+
+    Args:
+        level: (str): write your description
+    """
     start, end = LEVELS[level]
     num1 = randint(start, end)
     num2 = randint(start, end)
@@ -31,12 +37,25 @@ class MainWindow(QMainWindow):
     current_level = 'Kolay'
 
     def __init__(self, flags=None, *args, **kwargs):
+        """
+        Initialize this class.
+
+        Args:
+            self: (todo): write your description
+            flags: (int): write your description
+        """
         super().__init__(flags, *args, **kwargs)
 
         uic.loadUi('form.ui', self)
         self.initialise()
 
     def initialise(self):
+        """
+        Initializes the signals.
+
+        Args:
+            self: (todo): write your description
+        """
         self.cb_level.currentTextChanged.connect(
             lambda txt: self.on_level_changed(txt)
         )
@@ -45,15 +64,34 @@ class MainWindow(QMainWindow):
         self.start()
 
     def on_level_changed(self, txt):
+        """
+        When a callback
+
+        Args:
+            self: (todo): write your description
+            txt: (todo): write your description
+        """
         self.current_level = txt
         self.start()
 
     def start(self):
+        """
+        Start the next n rows
+
+        Args:
+            self: (todo): write your description
+        """
         self.num1, self.num2 = get_randoms(level=self.current_level)
         self.lbl_num1.setText(str(self.num1))
         self.lbl_num2.setText(str(self.num2))
 
     def on_result_entered(self):
+        """
+        U set the result
+
+        Args:
+            self: (todo): write your description
+        """
         correct_answer = str(self.num1 * self.num2)
         user_answer = self.txt_result.text()
         self.txt_result.setText('')

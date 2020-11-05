@@ -12,6 +12,11 @@ import os
 
 
 def yeni_klasor():
+    """
+    Generate ylas klas ylas ylas
+
+    Args:
+    """
     dosya = input("Oluşturacağınız klasörün adı: ")
 
     if os.path.exists(dosya):
@@ -21,6 +26,11 @@ def yeni_klasor():
 
 
 def dizini_listele():
+    """
+    List all dizini dizini
+
+    Args:
+    """
     print("{}/\n...".format(os.getcwd()))
 
     for a, i in enumerate(os.listdir(os.curdir)):
@@ -28,6 +38,11 @@ def dizini_listele():
 
 
 def klasor_silme():
+    """
+    Klasor_silme_silme
+
+    Args:
+    """
     dizin = {}
     print("\nno\t\tdosya adı\n--\t\t---------")
 
@@ -49,6 +64,11 @@ def klasor_silme():
 
 
 def main():
+    """
+    Main function.
+
+    Args:
+    """
     print("""
     'os' modülü ile dosya işlemleri
     -----------------------------

@@ -6,6 +6,11 @@ from bs4 import BeautifulSoup
 
 
 def get_channels():
+    """
+    Get the channels list
+
+    Args:
+    """
     url = "https://www.tvyayinakisi.com/"
     html = requests.get(url).content.decode('utf-8')
     soup = BeautifulSoup(html, 'html.parser')
@@ -27,6 +32,12 @@ def get_channels():
 
 
 def get_streams(url):
+    """
+    Parse a list of urls.
+
+    Args:
+        url: (str): write your description
+    """
     html = requests.get(url).content.decode('utf-8')
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -47,6 +58,13 @@ def get_streams(url):
 
 
 def saved_logo_path(name, url):
+    """
+    Download a logo path
+
+    Args:
+        name: (str): write your description
+        url: (str): write your description
+    """
     icon_dir = 'icons'
     icon_path = os.path.join(icon_dir, name + '.png')
 

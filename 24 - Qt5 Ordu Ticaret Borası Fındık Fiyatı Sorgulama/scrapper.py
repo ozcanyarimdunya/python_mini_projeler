@@ -11,6 +11,14 @@ __EVENTVALIDATION = "SZoOvRm/1D21CNnQgOmb70D7USWwpgdTDuB3r5vD8JO3kOGvTAxu93dC3/p
 
 
 def get_data(year, month, day):
+    """
+    Get month data for a month.
+
+    Args:
+        year: (bool): write your description
+        month: (str): write your description
+        day: (bool): write your description
+    """
     url = 'http://www.ordutb.org.tr/grafik/4069'
     day = "0{}".format(day) if day < 10 else day
     month = "0{}".format(month) if month < 10 else day

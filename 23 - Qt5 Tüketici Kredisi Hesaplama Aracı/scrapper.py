@@ -12,6 +12,12 @@ product_types = {
 
 
 def get_icon_path(name):
+    """
+    Return the path to an icon.
+
+    Args:
+        name: (str): write your description
+    """
     icon_dir = 'icons'
     if not os.path.isdir(icon_dir):
         os.mkdir(icon_dir)
@@ -20,6 +26,12 @@ def get_icon_path(name):
 
 
 def get_logo(bank_id):
+    """
+    Get the logo.
+
+    Args:
+        bank_id: (str): write your description
+    """
     url = base_url + "/assets/img/bank/m-{}.png".format(bank_id)
     icon_path = get_icon_path(bank_id)
 
@@ -32,6 +44,14 @@ def get_logo(bank_id):
 
 
 def get_data(amount, maturity, product_type):
+    """
+    Get product data
+
+    Args:
+        amount: (int): write your description
+        maturity: (str): write your description
+        product_type: (str): write your description
+    """
     url = base_url + "/Calculator/GetProductList"
     payload = {
         "loanAmount": amount,

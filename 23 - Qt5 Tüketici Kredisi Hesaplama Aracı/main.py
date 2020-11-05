@@ -14,12 +14,27 @@ class CreditThread(QThread):
     onFinish = pyqtSignal(str)
 
     def __init__(self, amount, maturity, product_type):
+        """
+        Initialize the product.
+
+        Args:
+            self: (todo): write your description
+            amount: (float): write your description
+            maturity: (todo): write your description
+            product_type: (str): write your description
+        """
         super().__init__()
         self.amount = amount
         self.maturity = maturity
         self.product_type = product_type
 
     def run(self):
+        """
+        Emits the product
+
+        Args:
+            self: (todo): write your description
+        """
         self.onStart.emit("Loading credits ..")
 
         credit = get_data(self.amount, self.maturity, self.product_type)
@@ -51,16 +66,38 @@ class MainWindow(QMainWindow):
     )
 
     def __init__(self, flags=None, *args, **kwargs):
+        """
+        Initialize this class.
+
+        Args:
+            self: (todo): write your description
+            flags: (int): write your description
+        """
         super().__init__(flags, *args, **kwargs)
 
         uic.loadUi('form.ui', self)
         self.initialise()
 
     def initialise(self):
+        """
+        Initializes the tab.
+
+        Args:
+            self: (todo): write your description
+        """
         self.tab_widget.currentChanged.connect(lambda index: self.on_tab_change(index))
         self.btn_calculate.clicked.connect(lambda: self.on_calculate_clicked())
 
     def set_credits(self, amount, maturity, product_type):
+        """
+        Sets the amount of the given amount.
+
+        Args:
+            self: (todo): write your description
+            amount: (todo): write your description
+            maturity: (todo): write your description
+            product_type: (str): write your description
+        """
         self.credit_thread = CreditThread(amount, maturity, product_type)
         self.credit_thread.onStart.connect(lambda msg: self.statusbar.showMessage(msg))
         self.credit_thread.onFinish.connect(lambda msg: self.statusbar.showMessage(msg))
@@ -95,11 +132,24 @@ class MainWindow(QMainWindow):
             self.tbl_result.setItem(row, 4, QTableWidgetItem(data.get('MonthlyInstallment') + " TL"))
 
     def on_tab_change(self, index):
+        """
+        Updates the tab
+
+        Args:
+            self: (todo): write your description
+            index: (int): write your description
+        """
         tab = getattr(self, self.mappings[index][1])
         self.widget_calculator.setParent(tab)
         self.widget_calculator.show()
 
     def on_calculate_clicked(self):
+        """
+        Calculate the current tab clicked.
+
+        Args:
+            self: (todo): write your description
+        """
         current_tab = self.tab_widget.currentIndex()
         amount = int(self.sb_amount.value())
         maturity = int(self.cb_maturity.currentText())

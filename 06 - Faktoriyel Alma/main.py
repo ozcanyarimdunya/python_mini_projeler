@@ -6,6 +6,12 @@
 
 
 def fact(sayi):
+    """
+    R returns the fact of a fact.
+
+    Args:
+        sayi: (array): write your description
+    """
     if sayi <= 1:
         return 1
     else:
