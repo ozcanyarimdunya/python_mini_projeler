@@ -10,9 +10,9 @@ def generate():
 
 c = 1
 for i, j in generate():
-    print(f'Try: {c}', end='\r')
-    if i==6 and j==6:
+    if i == j == 6:
         print(f"Found: {c}")
         break
-    c += 1
- 
+    else:
+        print(f'Try: {c}', end='\r')
+        c += 1
