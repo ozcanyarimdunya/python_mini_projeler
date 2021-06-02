@@ -8,4 +8,4 @@ PyQt5==5.14.0
 PyQt5-sip==12.7.0
 requests==2.22.0
 soupsieve==1.9.5
-urllib3==1.25.7
+urllib3==1.26.5
