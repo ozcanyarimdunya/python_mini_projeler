@@ -1,0 +1,51 @@
+site_name: Python Mini Projeler
+site_url: https://ozcanyarimdunya.github.io
+site_author: Özcan Yarımdünya
+site_description: Python Mini Projeler
+
+copyright: Copyright &copy; 2022 <a href="https://yarimdunya.com" target="_blank">Özcan Yarımdünya<a/>
+
+markdown_extensions:
+  toc:
+    permalink: "#"
+
+plugins:
+  - search
+
+theme:
+  name: material
+  custom_dir: theme
+  palette:
+    scheme: slate
+    primary: black
+  favicon: assets/images/favicon.ico
+  icon:
+    logo: svg/favicon
+  features:
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ozcanyarimdunya
+      name: LinkedIn
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ozcanyarimdunya
+      name: Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/ozcanyarimdunya
+      name: Github
+    - icon: material/gmail
+      link: mailto:ozcanyd@gmail.com
+      name: Mail
+    - icon: fontawesome/brands/stack-overflow
+      link: https://stackoverflow.com/users/3117592/ozcanyarimdunya
+      name: Stack Overflow
+
+nav:
+  - Anasayfa: index.md
+  - Python Mini Eğitim Seti:
+      - Hello World: '01-getting-started/hello-world.md'
