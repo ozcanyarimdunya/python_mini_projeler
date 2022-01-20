@@ -1,10 +1,10 @@
 # Python Mini Projeler
 
-> Dokumantasyon linki: [https://ozcanyarimdunya.github.io/python_mini_projeler](https://ozcanyarimdunya.github.io/python_mini_projeler)
+> Proje linki: [https://github.com/ozcanyarimdunya/python_mini_projeler](https://github.com/ozcanyarimdunya/python_mini_projeler)
 > 
-> Dokumantasyon gelistirme asamasindadir, her turlu yardimlariniz kabul edilir 😊😁❤️
+> Her turlu yardimlariniz kabul edilir 😊😁❤️
 
-Boş zamanlarımda hobi olarak eğitim serisi tarzında python da yazdığım mini mini projeler bunlar :)
+Boş zamanlarımda hobi olarak eğitim serisi tarzında python da yazdığım mini mini projeler bunlar 😁
 
 Bütün proje dosyalarına gerekli açıklamaları elimden geldigince yazdım.
 

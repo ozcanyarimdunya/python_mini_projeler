@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "python_mini_projeler"
+version = "0.1.0"
+description = ""
+authors = ["Ozcan Yarimdunya <ozcan.yarimdunya@sahibinden.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs-material = "^8.1.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
