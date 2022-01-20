@@ -2,8 +2,9 @@ site_name: Python Mini Projeler
 site_url: https://ozcanyarimdunya.github.io
 site_author: Özcan Yarımdünya
 site_description: Python Mini Projeler
-
 copyright: Copyright &copy; 2022 <a href="https://yarimdunya.com" target="_blank">Özcan Yarımdünya<a/>
+repo_name: python mini projeler
+repo_url: https://github.com/ozcanyarimdunya/python_mini_projeler
 
 markdown_extensions:
   toc:
@@ -16,8 +17,16 @@ theme:
   name: material
   custom_dir: theme
   palette:
-    scheme: slate
-    primary: black
+    - scheme: default
+      primary: teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/toggle-switch
+        name: Light mode
   favicon: assets/images/favicon.ico
   icon:
     logo: svg/favicon
@@ -29,6 +38,9 @@ theme:
 
 extra:
   social:
+    - icon: material/web
+      link: https://yarimdunya.com
+      name: Website
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/ozcanyarimdunya
       name: LinkedIn
@@ -47,5 +59,5 @@ extra:
 
 nav:
   - Anasayfa: index.md
-  - Python Mini Eğitim Seti:
+  - Mini Eğitim Seti:
       - Hello World: '01-getting-started/hello-world.md'

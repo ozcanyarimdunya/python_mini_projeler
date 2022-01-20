@@ -23,8 +23,8 @@ Bütün proje dosyalarına gerekli açıklamaları elimden geldigince yazdım.
 Oncelikle bir terminal acip repoyu indirin
 
 ```bash
- $ git clone https://github.com/ozcanyarimdunya/python_mini_projeler.git python3_projeler
- $ cd python3_projeler/
+git clone https://github.com/ozcanyarimdunya/python_mini_projeler.git python3_projeler
+cd python3_projeler/
 ```
 
 Pesinden isterleri kurunuz
