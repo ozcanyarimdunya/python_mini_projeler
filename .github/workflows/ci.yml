@@ -21,8 +21,8 @@ jobs:
     - name: Cache dependencies
       uses: actions/cache@v2
       with:
-        path: ${{ env.pythonLocation }}
-        key: ${{ env.pythonLocation }}-${{ hashFiles('poetry.lock') }}
+        path: ~/.cache/pypoetry/virtualenvs
+        key: ${{ hashFiles('poetry.lock') }}
 
     - name: Install dependencies
       run: pip install poetry && poetry install
