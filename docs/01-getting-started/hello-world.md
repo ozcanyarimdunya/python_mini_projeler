@@ -1,6 +1,6 @@
 # Hello World
 
-Pythonda diğer proglama dillerine nazaren daha az syntax kullanılır
+Pythonda diğer programlama dillerine nazaren daha az syntax kullanılır
 Örneğin C de yazacağınız bir hello world uygulaması için;
 
 ```c
