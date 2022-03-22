@@ -13,5 +13,8 @@ for i in range(2, deger):
             break
     else:
         asal.append(i)
-
-print("\n0 - {} arasında toplam {} tane asal sayı vardır.".format(deger, len(asal)))
+        
+dosya = open('asalSayi.txt', 'w')
+dosya.write(f'0 - {deger} Arasinda Olan Asal Sayilar: ')
+dosya.write(str(asal))
+#print("\n0 - {} arasında toplam {} tane asal sayı vardır.".format(deger, len(asal)))
